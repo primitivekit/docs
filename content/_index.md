@@ -1,27 +1,25 @@
 ---
 title: PrimitiveKit
-toc: false
-sidebar:
-  exclude: true
+layout: hextra-home
 ---
 
-<div class="hx-mt-6 hx-mb-6">
+<div class="hx-mt-12 hx-mb-8">
 {{< hextra/hero-headline >}}
   Build Beautiful UIs&nbsp;<br class="sm:hx-block hx-hidden" />with PrimitiveKit
 {{< /hextra/hero-headline >}}
 </div>
 
-<div class="hx-mb-12">
+<div class="hx-mb-16">
 {{< hextra/hero-subtitle >}}
   A flexible, accessible component library with 600+ design tokens.&nbsp;<br class="sm:hx-block hx-hidden" />Zero hardcoded values. Complete customization for React, Vue, Svelte, Angular & HTML.
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx-mb-6">
+<div class="hx-mb-16">
 {{< hextra/hero-button text="Get Started" link="docs/installation" >}}
 </div>
 
-<div class="hx-mt-6"></div>
+<div class="hx-mt-16"></div>
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card

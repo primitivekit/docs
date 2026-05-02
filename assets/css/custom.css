@@ -404,18 +404,3 @@ nav .hx\:h-16,
   height: 1rem;
   flex-shrink: 0;
 }
-
-/* ============================================
- * HOMEPAGE FULL WIDTH
- * ============================================ */
-
-/* Make homepage content full width when no sidebars */
-body:has(.hextra-feature-grid) main {
-  max-width: 100% !important;
-}
-
-body:has(.hextra-feature-grid) .hextra-content {
-  max-width: var(--hextra-max-page-width, 90rem) !important;
-  margin: 0 auto !important;
-  padding: 0 2rem !important;
-}
