@@ -7,6 +7,7 @@ import Customization from './pages/Customization';
 import Accessibility from './pages/Accessibility';
 import DesignTokens from './pages/DesignTokens';
 import ButtonComponent from './pages/ButtonComponent';
+import InputComponent from './pages/InputComponent';
 import GenericComponent from './pages/GenericComponent';
 import NotFound from './pages/NotFound';
 import { components } from './config/components';
@@ -28,12 +29,13 @@ function App() {
           <Route path="accessibility" element={<Accessibility />} />
           <Route path="design-tokens" element={<DesignTokens />} />
           
-          {/* Button has custom page */}
+          {/* Button and Input have custom pages */}
           <Route path="components/button" element={<ButtonComponent />} />
+          <Route path="components/input" element={<InputComponent />} />
           
           {/* All other components use generic template */}
           {components
-            .filter(c => c.id !== 'button')
+            .filter(c => c.id !== 'button' && c.id !== 'input')
             .map(component => (
               <Route
                 key={component.id}
