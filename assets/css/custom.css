@@ -1,56 +1,44 @@
 /* Custom Styles for PrimitiveKit Documentation */
 
 /* ============================================
- * DARK MODE - Simple Background Change
+ * DARK MODE - Pitch Black Background
  * ============================================ */
 
-/* Change main background to pure black */
-:root[class~="dark"] body,
-:root[class~="dark"] html {
+/* Override Hextra's dark color variable to pure black */
+.dark {
+  --hx-color-dark: #000000;
+}
+
+/* ============================================
+ * DROPDOWN & MENU BACKGROUNDS
+ * ============================================ */
+
+/* Override dropdown and menu backgrounds in dark mode */
+:root[class~="dark"] .dropdown,
+:root[class~="dark"] .dropdown-menu,
+:root[class~="dark"] [role="menu"],
+:root[class~="dark"] .hextra-search-wrapper,
+:root[class~="dark"] [class*="menu"] {
   background-color: #000000 !important;
 }
 
-/* Sidebar and main content area backgrounds */
-:root[class~="dark"] .hextra-sidebar,
-:root[class~="dark"] aside,
-:root[class~="dark"] main {
-  background-color: #000000 !important;
+/* Override shadows in dark mode to use black */
+:root[class~="dark"] .dropdown,
+:root[class~="dark"] .dropdown-menu,
+:root[class~="dark"] [role="menu"],
+:root[class~="dark"] .hextra-search-wrapper {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9) !important;
+  border: 1px solid #1f1f1f !important;
 }
 
-/* Navbar background */
-:root[class~="dark"] .hextra-navbar,
-:root[class~="dark"] nav {
-  background-color: #000000 !important;
+/* Search results container */
+:root[class~="dark"] .hextra-search-wrapper li {
+  background-color: transparent !important;
 }
 
-/* Footer background */
-:root[class~="dark"] .hextra-footer {
-  background-color: #000000 !important;
-}
-
-/* TOC (right sidebar) background */
-:root[class~="dark"] .hextra-toc {
-  background-color: #000000 !important;
-}
-
-/* Navigation container */
-:root[class~="dark"] .hextra-nav-container {
-  background-color: #000000 !important;
-}
-
-/* Scrollbar container (sticky right sidebar) */
-:root[class~="dark"] .hextra-scrollbar {
-  background-color: #000000 !important;
-}
-
-/* Any container divs */
-:root[class~="dark"] .hextra-container {
-  background-color: #000000 !important;
-}
-
-/* Content wrapper */
-:root[class~="dark"] [class*="hextra"] {
-  background-color: transparent;
+:root[class~="dark"] .hextra-search-wrapper li a:hover,
+:root[class~="dark"] .hextra-search-wrapper li .hextra-search-active {
+  background-color: #0a0a0a !important;
 }
 
 /* ============================================
@@ -67,7 +55,7 @@
 
 :root[class~="dark"] .hextra-footer {
   border-top-color: #1f1f1f;
-  background-color: #0a0a0a;
+  background-color: #000000;
 }
 
 /* Footer content wrapper */
@@ -288,72 +276,4 @@
   width: 1rem;
   height: 1rem;
   flex-shrink: 0;
-}
-
-/* ============================================
- * LIGHT MODE IMPROVEMENTS
- * ============================================ */
-
-/* Ensure light mode also looks good */
-body {
-  background-color: #ffffff;
-}
-
-.hextra-navbar {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.hextra-sidebar {
-  background-color: #fafafa;
-  border-right: 1px solid #e5e5e5;
-}
-
-/* ============================================
- * SMOOTH TRANSITIONS
- * ============================================ */
-
-* {
-  transition-property: background-color, border-color, color, fill, stroke;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
-}
-
-/* Remove transitions from specific elements */
-pre, code, img, video, svg {
-  transition: none !important;
-}
-
-/* ============================================
- * FOCUS STATES
- * ============================================ */
-
-:focus-visible {
-  outline: 2px solid #0ea5e9;
-  outline-offset: 2px;
-  border-radius: 0.25rem;
-}
-
-:root[class~="dark"] :focus-visible {
-  outline-color: #38bdf8;
-}
-
-/* ============================================
- * UTILITY CLASSES
- * ============================================ */
-
-.text-muted {
-  color: #737373;
-}
-
-:root[class~="dark"] .text-muted {
-  color: #737373;
-}
-
-.border-subtle {
-  border-color: #e5e5e5;
-}
-
-:root[class~="dark"] .border-subtle {
-  border-color: #1f1f1f;
 }
