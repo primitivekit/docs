@@ -1,6 +1,6 @@
 ---
 title: PrimitiveKit
-layout: hextra-home
+toc: false
 ---
 
 <div class="hx-mt-6 hx-mb-6">

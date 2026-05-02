@@ -1,6 +1,5 @@
 ---
 title: Showcase
-layout: hextra-home
 ---
 
 # Showcase

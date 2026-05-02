@@ -1,6 +1,5 @@
 ---
 title: Blog
-layout: hextra-home
 ---
 
 # Blog
