@@ -9,6 +9,19 @@
   --hx-color-dark: #000000;
 }
 
+/* Override the shadow color from #111 to #000000 */
+:root[class~="dark"] .hx\:dark\:shadow-\[0_-12px_16px_\#111\],
+.dark .hx\:dark\:shadow-\[0_-12px_16px_\#111\] {
+  --tw-shadow: 0 -12px 16px #000000 !important;
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow) !important;
+}
+
+/* Also override any element using this shadow */
+:root[class~="dark"] [class*="shadow-"][class*="#111"],
+.dark [class*="shadow-"][class*="#111"] {
+  --tw-shadow-color: #000000 !important;
+}
+
 /* ============================================
  * DROPDOWN & MENU BACKGROUNDS
  * ============================================ */
