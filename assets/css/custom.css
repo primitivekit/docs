@@ -1,0 +1,263 @@
+/* Custom Styles for PrimitiveKit Documentation */
+
+/* Darker Dark Mode */
+:root[class~="dark"] {
+  --color-neutral-50: #0a0a0a;
+  --color-neutral-100: #121212;
+  --color-neutral-200: #1a1a1a;
+  --color-neutral-300: #2a2a2a;
+  --color-neutral-400: #3a3a3a;
+  --color-neutral-500: #5a5a5a;
+  --color-neutral-600: #7a7a7a;
+  --color-neutral-700: #9a9a9a;
+  --color-neutral-800: #bababa;
+  --color-neutral-900: #dadada;
+  
+  /* Background colors */
+  --color-bg-primary: #0a0a0a;
+  --color-bg-secondary: #121212;
+  --color-bg-tertiary: #1a1a1a;
+  
+  /* Sidebar background */
+  --sidebar-bg: #0a0a0a;
+  --sidebar-border: #2a2a2a;
+  
+  /* Card backgrounds */
+  --card-bg: #121212;
+  --card-border: #2a2a2a;
+}
+
+/* Better sidebar contrast in dark mode */
+:root[class~="dark"] .hextra-sidebar {
+  background-color: var(--color-bg-primary);
+  border-right-color: var(--sidebar-border);
+}
+
+:root[class~="dark"] .hextra-sidebar-container {
+  background-color: var(--color-bg-primary);
+}
+
+/* Better code block styling in dark mode */
+:root[class~="dark"] pre {
+  background-color: #0d1117 !important;
+  border: 1px solid #2a2a2a;
+}
+
+:root[class~="dark"] code {
+  background-color: #161b22;
+  border: 1px solid #2a2a2a;
+}
+
+/* Better table styling in dark mode */
+:root[class~="dark"] table {
+  border-color: #2a2a2a;
+}
+
+:root[class~="dark"] th {
+  background-color: #121212;
+  border-color: #2a2a2a;
+}
+
+:root[class~="dark"] td {
+  border-color: #2a2a2a;
+}
+
+/* Better card styling */
+:root[class~="dark"] .hextra-card {
+  background-color: var(--card-bg);
+  border-color: var(--card-border);
+}
+
+/* Footer Styling */
+.hextra-footer {
+  border-top: 1px solid var(--color-neutral-200);
+  padding: 3rem 0 2rem;
+  margin-top: 4rem;
+}
+
+:root[class~="dark"] .hextra-footer {
+  border-top-color: var(--color-neutral-800);
+  background-color: var(--color-bg-primary);
+}
+
+.footer-content {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  color: var(--color-neutral-900);
+}
+
+:root[class~="dark"] .footer-section h3 {
+  color: var(--color-neutral-100);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: var(--color-neutral-600);
+  text-decoration: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-section a:hover {
+  color: var(--color-primary-600);
+}
+
+:root[class~="dark"] .footer-section a {
+  color: var(--color-neutral-400);
+}
+
+:root[class~="dark"] .footer-section a:hover {
+  color: var(--color-primary-400);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--color-neutral-200);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+:root[class~="dark"] .footer-bottom {
+  border-top-color: var(--color-neutral-800);
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social a {
+  color: var(--color-neutral-600);
+  transition: color 0.2s;
+}
+
+.footer-social a:hover {
+  color: var(--color-primary-600);
+}
+
+:root[class~="dark"] .footer-social a {
+  color: var(--color-neutral-400);
+}
+
+:root[class~="dark"] .footer-social a:hover {
+  color: var(--color-primary-400);
+}
+
+/* NPM Badge Styling */
+.npm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--color-neutral-100);
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.npm-badge:hover {
+  background-color: var(--color-neutral-200);
+  border-color: var(--color-neutral-300);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+:root[class~="dark"] .npm-badge {
+  background-color: var(--color-neutral-800);
+  border-color: var(--color-neutral-700);
+}
+
+:root[class~="dark"] .npm-badge:hover {
+  background-color: var(--color-neutral-700);
+  border-color: var(--color-neutral-600);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon styling */
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Better scrollbar in dark mode */
+:root[class~="dark"] ::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+:root[class~="dark"] ::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+:root[class~="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--color-neutral-700);
+  border-radius: 6px;
+}
+
+:root[class~="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neutral-600);
+}
+
+/* Better focus states */
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+/* Remove transitions from specific elements */
+pre, code, img, video {
+  transition: none;
+}

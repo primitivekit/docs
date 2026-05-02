@@ -8,8 +8,14 @@ path = "github.com/imfing/hextra"
 
 enableRobotsTXT = true
 enableGitInfo = true
-enableEmoji = true
+enableEmoji = false
 hasCJKLanguage = false
+
+# Output formats for markdown and llms.txt
+[outputs]
+home = ["html", "rss", "llms"]
+page = ["html", "markdown"]
+section = ["html", "rss", "markdown"]
 
 [services.googleAnalytics]
 ID = ''
@@ -27,7 +33,7 @@ pageRef = "/docs"
 weight = 1
 
 [[menu.main]]
-name = "React"
+name = "Components"
 pageRef = "/docs/react"
 weight = 2
 
@@ -42,9 +48,24 @@ pageRef = "/blog"
 weight = 4
 
 [[menu.main]]
+name = "Search"
+weight = 5
+[menu.main.params]
+type = "search"
+
+[[menu.main]]
 name = "GitHub"
 url = "https://github.com/primitivekit/react"
-weight = 5
+weight = 6
+[menu.main.params]
+icon = "github"
+
+[[menu.main]]
+name = "NPM"
+url = "https://www.npmjs.com/package/@primitivekit/react"
+weight = 7
+[menu.main.params]
+icon = "cube"
 
 [[menu.sidebar]]
 name = "Getting Started"
@@ -400,15 +421,77 @@ weight = 7
 
 [params]
 description = "A flexible, accessible React component library with 600+ design tokens. Zero hardcoded values. Complete customization."
-navbar.displayTitle = true
-navbar.displayLogo = false
-page.width = "wide"
-theme.default = "system"
-theme.displayToggle = true
-footer.displayCopyright = true
-footer.displayPoweredBy = false
-editURL.enable = true
-editURL.base = "https://github.com/primitivekit/docs/edit/main/content"
 
+# Navbar
+[params.navbar]
+displayTitle = true
+displayLogo = false
+width = "wide"
+
+# Page
+[params.page]
+width = "wide"
+displayPagination = true
+
+# Page Context Menu (Copy, View Markdown, Open in ChatGPT/Claude)
+[params.page.contextMenu]
+enable = true
+
+[[params.page.contextMenu.links]]
+name = "Open in ChatGPT"
+icon = "chatgpt"
+url = "https://chatgpt.com/?hints=search&q=I%27m+looking+at+this+documentation%3A+{url}%0AHelp+me+understand+how+to+use+it."
+
+[[params.page.contextMenu.links]]
+name = "Open in Claude"
+icon = "sparkles"
+url = "https://claude.ai/new?q=I%27m+looking+at+this+documentation%3A+{url}%0AHelp+me+understand+how+to+use+it."
+
+# Theme
+[params.theme]
+default = "system"
+displayToggle = true
+
+# Footer
+[params.footer]
+displayCopyright = true
+displayPoweredBy = false
+width = "wide"
+
+# Edit URL
+[params.editURL]
+enable = true
+base = "https://github.com/primitivekit/docs/edit/main/content"
+
+# Search - FlexSearch
 [params.search]
-enable = false
+enable = true
+type = "flexsearch"
+
+[params.search.flexsearch]
+index = "content"
+tokenize = "forward"
+
+# Display last updated date and author
+displayUpdatedDate = true
+dateFormat = "January 2, 2006"
+displayUpdatedAuthor = true
+
+# Table of Contents
+[params.toc]
+displayTags = true
+
+# Blog
+[params.blog]
+[params.blog.list]
+displayTags = true
+
+[params.blog.article]
+displayPagination = true
+
+# Image Zoom
+[params.imageZoom]
+enable = true
+
+# External Link Decoration
+externalLinkDecoration = true
