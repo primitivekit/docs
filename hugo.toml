@@ -128,6 +128,7 @@ weight = 4
 name = "React Components"
 weight = 4
 
+# Form Components
 [[menu.sidebar]]
 name = "Form Components"
 parent = "React Components"
@@ -182,6 +183,19 @@ parent = "Form Components"
 weight = 8
 
 [[menu.sidebar]]
+name = "Form"
+pageRef = "/docs/react/form"
+parent = "Form Components"
+weight = 9
+
+[[menu.sidebar]]
+name = "Upload"
+pageRef = "/docs/react/upload"
+parent = "Form Components"
+weight = 10
+
+# Layout Components
+[[menu.sidebar]]
 name = "Layout Components"
 parent = "React Components"
 weight = 2
@@ -211,10 +225,178 @@ parent = "Layout Components"
 weight = 4
 
 [[menu.sidebar]]
+name = "Space"
+pageRef = "/docs/react/space"
+parent = "Layout Components"
+weight = 5
+
+[[menu.sidebar]]
 name = "Divider"
 pageRef = "/docs/react/divider"
 parent = "Layout Components"
+weight = 6
+
+# Feedback Components
+[[menu.sidebar]]
+name = "Feedback Components"
+parent = "React Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Alert"
+pageRef = "/docs/react/alert"
+parent = "Feedback Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Badge"
+pageRef = "/docs/react/badge"
+parent = "Feedback Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Spinner"
+pageRef = "/docs/react/spinner"
+parent = "Feedback Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Progress"
+pageRef = "/docs/react/progress"
+parent = "Feedback Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Skeleton"
+pageRef = "/docs/react/skeleton"
+parent = "Feedback Components"
 weight = 5
+
+# Navigation Components
+[[menu.sidebar]]
+name = "Navigation Components"
+parent = "React Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Link"
+pageRef = "/docs/react/link"
+parent = "Navigation Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Breadcrumb"
+pageRef = "/docs/react/breadcrumb"
+parent = "Navigation Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Tabs"
+pageRef = "/docs/react/tabs"
+parent = "Navigation Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Menu"
+pageRef = "/docs/react/menu"
+parent = "Navigation Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Steps"
+pageRef = "/docs/react/steps"
+parent = "Navigation Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Pagination"
+pageRef = "/docs/react/pagination"
+parent = "Navigation Components"
+weight = 6
+
+# Overlay Components
+[[menu.sidebar]]
+name = "Overlay Components"
+parent = "React Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Modal"
+pageRef = "/docs/react/modal"
+parent = "Overlay Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Drawer"
+pageRef = "/docs/react/drawer"
+parent = "Overlay Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Tooltip"
+pageRef = "/docs/react/tooltip"
+parent = "Overlay Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Popover"
+pageRef = "/docs/react/popover"
+parent = "Overlay Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Dropdown"
+pageRef = "/docs/react/dropdown"
+parent = "Overlay Components"
+weight = 5
+
+# Data Display Components
+[[menu.sidebar]]
+name = "Data Display Components"
+parent = "React Components"
+weight = 6
+
+[[menu.sidebar]]
+name = "Avatar"
+pageRef = "/docs/react/avatar"
+parent = "Data Display Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Tag"
+pageRef = "/docs/react/tag"
+parent = "Data Display Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Table"
+pageRef = "/docs/react/table"
+parent = "Data Display Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Collapse"
+pageRef = "/docs/react/collapse"
+parent = "Data Display Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Image"
+pageRef = "/docs/react/image"
+parent = "Data Display Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Empty"
+pageRef = "/docs/react/empty"
+parent = "Data Display Components"
+weight = 6
+
+[[menu.sidebar]]
+name = "Typography"
+pageRef = "/docs/react/typography"
+parent = "Data Display Components"
+weight = 7
 
 [params]
 description = "A flexible, accessible React component library with 600+ design tokens. Zero hardcoded values. Complete customization."
