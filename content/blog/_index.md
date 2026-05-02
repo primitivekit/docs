@@ -6,51 +6,38 @@ title: Blog
 
 Stay updated with the latest news, tutorials, and insights from the PrimitiveKit team.
 
+---
+
 ## Latest Posts
 
-Coming soon! We'll be sharing:
+{{< cards >}}
+  {{< card link="/blog/getting-started" title="Getting Started with PrimitiveKit" subtitle="A comprehensive introduction to building UIs with PrimitiveKit" icon="document-text" >}}
+  {{< card link="/blog/design-tokens" title="Design Token Deep Dive" subtitle="Understanding the token system and customization" icon="color-swatch" >}}
+  {{< card link="/blog/accessibility" title="Building Accessible Components" subtitle="WCAG compliance best practices" icon="shield-check" >}}
+  {{< card link="/blog/customization" title="Customization Guide" subtitle="Making PrimitiveKit your own" icon="adjustments" >}}
+{{< /cards >}}
 
-- 📝 **Tutorials** - Step-by-step guides
-- 🚀 **Release Notes** - New features and updates
-- 💡 **Best Practices** - Tips and tricks
-- 🎨 **Design Insights** - Design system philosophy
-- 🛠️ **Technical Deep Dives** - Under the hood
+---
 
-## Subscribe
+## Categories
+
+Browse posts by category:
+
+- 🚀 [Tutorials](/blog/tutorials) - Step-by-step guides
+- 📦 [Release Notes](/blog/releases) - New features and updates
+- 💡 [Best Practices](/blog/best-practices) - Tips and patterns
+- 🎨 [Design Insights](/blog/design) - Design system philosophy
+
+---
+
+## Stay Connected
 
 Get notified when we publish new content:
 
-- 📧 Newsletter (coming soon)
-- 🐦 Twitter (coming soon)
-- 📱 RSS Feed (coming soon)
+- 📧 **Newsletter** - Coming soon
+- 🐦 **Twitter** - [@primitivekit](https://twitter.com/primitivekit)
+- 📱 **RSS Feed** - Coming soon
 
-## Topics We'll Cover
+---
 
-### Getting Started
-- Installation guides
-- Quick start tutorials
-- Migration guides
-
-### Component Guides
-- Component deep dives
-- Usage patterns
-- Customization examples
-
-### Design System
-- Design token philosophy
-- Theming strategies
-- Accessibility best practices
-
-### Advanced Topics
-- Performance optimization
-- Server-side rendering
-- Custom component creation
-
-## Coming Soon
-
-We're preparing high-quality content for you. Check back soon!
-
-In the meantime:
-- Explore our [documentation](/docs)
-- Browse [React components](/docs/react)
-- Join the [discussion](https://github.com/primitivekit/react/discussions)
+In the meantime, explore our [documentation](/docs) or browse [React components](/docs/react).
