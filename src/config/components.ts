@@ -6,7 +6,7 @@
 export interface ComponentInfo {
   id: string;
   name: string;
-  category: 'form' | 'layout' | 'feedback' | 'navigation' | 'overlay';
+  category: 'form' | 'layout' | 'feedback' | 'navigation' | 'overlay' | 'general' | 'data-display';
   path: string;
   description: string;
   status: 'complete' | 'in-progress' | 'planned';
@@ -112,6 +112,14 @@ export const components: ComponentInfo[] = [
     description: 'Visual separator between content',
     status: 'complete'
   },
+  {
+    id: 'space',
+    name: 'Space',
+    category: 'layout',
+    path: '/components/space',
+    description: 'Spacing utility component',
+    status: 'complete'
+  },
   
   // Feedback Components
   {
@@ -213,6 +221,34 @@ export const components: ComponentInfo[] = [
     path: '/components/dropdown',
     description: 'Dropdown menu component',
     status: 'complete'
+  },
+  
+  // General Components
+  {
+    id: 'typography',
+    name: 'Typography',
+    category: 'general',
+    path: '/components/typography',
+    description: 'Text styling component',
+    status: 'complete'
+  },
+  
+  // Data Display Components
+  {
+    id: 'avatar',
+    name: 'Avatar',
+    category: 'data-display',
+    path: '/components/avatar',
+    description: 'User avatar component',
+    status: 'complete'
+  },
+  {
+    id: 'tag',
+    name: 'Tag',
+    category: 'data-display',
+    path: '/components/tag',
+    description: 'Label and tag component',
+    status: 'complete'
   }
 ];
 
@@ -221,7 +257,9 @@ export const componentsByCategory = {
   layout: components.filter(c => c.category === 'layout'),
   feedback: components.filter(c => c.category === 'feedback'),
   navigation: components.filter(c => c.category === 'navigation'),
-  overlay: components.filter(c => c.category === 'overlay')
+  overlay: components.filter(c => c.category === 'overlay'),
+  general: components.filter(c => c.category === 'general'),
+  'data-display': components.filter(c => c.category === 'data-display')
 };
 
 export const categoryLabels = {
@@ -229,5 +267,7 @@ export const categoryLabels = {
   layout: 'Layout',
   feedback: 'Feedback',
   navigation: 'Navigation',
-  overlay: 'Overlay'
+  overlay: 'Overlay',
+  general: 'General',
+  'data-display': 'Data Display'
 };
