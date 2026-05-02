@@ -131,16 +131,29 @@ nav .hx\:h-16,
 :root[class~="dark"] .dropdown,
 :root[class~="dark"] .dropdown-menu,
 :root[class~="dark"] [role="menu"],
-:root[class~="dark"] .hextra-search-wrapper,
 :root[class~="dark"] [class*="menu"] {
   background-color: #000000 !important;
 }
 
-/* Override shadows in dark mode to use black */
+/* Override shadows in dark mode to use black - but NOT for navbar search wrapper */
 :root[class~="dark"] .dropdown,
 :root[class~="dark"] .dropdown-menu,
-:root[class~="dark"] [role="menu"],
-:root[class~="dark"] .hextra-search-wrapper {
+:root[class~="dark"] [role="menu"] {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 1) !important;
+  border: 1px solid #1f1f1f !important;
+}
+
+/* Search wrapper in navbar should have no border */
+:root[class~="dark"] .hextra-navbar .hextra-search-wrapper {
+  box-shadow: none !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+
+/* But search results dropdown should have border */
+:root[class~="dark"] .hextra-search-wrapper[data-state="open"],
+:root[class~="dark"] .hextra-search-wrapper > div[role="dialog"] {
+  background-color: #000000 !important;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 1) !important;
   border: 1px solid #1f1f1f !important;
 }
