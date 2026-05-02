@@ -45,57 +45,42 @@
 .hextra-nav-container-blur {
   height: var(--navbar-height) !important;
   min-height: var(--navbar-height) !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
   width: 100% !important;
 }
 
-/* Center navbar content with max-width */
-.hextra-navbar > * {
+/* Direct child of navbar - full width with space-between */
+.hextra-navbar > div:first-child {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  height: 100% !important;
   width: 100% !important;
   max-width: var(--hextra-max-navbar-width, 90rem) !important;
+  margin: 0 auto !important;
   padding: 0 2rem !important;
-}
-
-/* Adjust navbar items spacing and alignment */
-.hextra-navbar nav,
-.hextra-navbar .hextra-navbar-content {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
   height: 100% !important;
-  width: 100% !important;
 }
 
-/* Main navbar container - space between logo and menu */
-.hextra-navbar > div,
-.hextra-navbar > nav {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  width: 100% !important;
-}
-
-/* Logo/title on left side */
+/* Logo/title on left side - no auto margin */
 .hextra-navbar a[href="/"] {
   display: flex !important;
   align-items: center !important;
   height: 100% !important;
-  margin-right: auto !important;
 }
 
-/* Menu items on right side */
-.hextra-navbar .hextra-navbar-content,
-.hextra-navbar nav > div:last-child {
+/* Menu container on right side */
+.hextra-navbar nav,
+.hextra-navbar > div:first-child > div:last-child {
   display: flex !important;
   align-items: center !important;
   gap: 1rem !important;
-  margin-left: auto !important;
+  height: 100% !important;
+}
+
+/* Remove weird borders from search */
+.hextra-navbar input,
+.hextra-navbar .hextra-search-wrapper input {
+  border-left: none !important;
+  border-right: none !important;
 }
 
 /* Adjust search and menu items */
