@@ -9,6 +9,7 @@ const Sidebar = () => {
     { label: 'Installation', path: '/installation' },
     { label: 'Customization', path: '/customization' },
     { label: 'Accessibility', path: '/accessibility' },
+    { label: 'Design Tokens', path: '/design-tokens' },
   ];
 
   return (

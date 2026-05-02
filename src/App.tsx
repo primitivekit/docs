@@ -5,6 +5,7 @@ import Introduction from './pages/Introduction';
 import Installation from './pages/Installation';
 import Customization from './pages/Customization';
 import Accessibility from './pages/Accessibility';
+import DesignTokens from './pages/DesignTokens';
 import ButtonComponent from './pages/ButtonComponent';
 import GenericComponent from './pages/GenericComponent';
 import NotFound from './pages/NotFound';
@@ -26,6 +27,7 @@ function App() {
           <Route path="installation" element={<Installation />} />
           <Route path="customization" element={<Customization />} />
           <Route path="accessibility" element={<Accessibility />} />
+          <Route path="design-tokens" element={<DesignTokens />} />
           
           {/* Button has custom page */}
           <Route path="components/button" element={<ButtonComponent />} />

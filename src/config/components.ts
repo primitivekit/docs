@@ -232,6 +232,14 @@ export const components: ComponentInfo[] = [
     description: 'Text styling component',
     status: 'complete'
   },
+  {
+    id: 'menu',
+    name: 'Menu',
+    category: 'general',
+    path: '/components/menu',
+    description: 'Navigation menu component',
+    status: 'complete'
+  },
   
   // Data Display Components
   {
@@ -248,6 +256,90 @@ export const components: ComponentInfo[] = [
     category: 'data-display',
     path: '/components/tag',
     description: 'Label and tag component',
+    status: 'complete'
+  },
+  {
+    id: 'empty',
+    name: 'Empty',
+    category: 'data-display',
+    path: '/components/empty',
+    description: 'Empty state placeholder',
+    status: 'complete'
+  },
+  {
+    id: 'image',
+    name: 'Image',
+    category: 'data-display',
+    path: '/components/image',
+    description: 'Image with preview and fallback',
+    status: 'complete'
+  },
+  {
+    id: 'collapse',
+    name: 'Collapse',
+    category: 'data-display',
+    path: '/components/collapse',
+    description: 'Collapsible accordion component',
+    status: 'complete'
+  },
+  {
+    id: 'table',
+    name: 'Table',
+    category: 'data-display',
+    path: '/components/table',
+    description: 'Data table with sorting',
+    status: 'complete'
+  },
+  
+  // Data Entry Components
+  {
+    id: 'form',
+    name: 'Form',
+    category: 'form',
+    path: '/components/form',
+    description: 'Form wrapper with validation',
+    status: 'complete'
+  },
+  {
+    id: 'slider',
+    name: 'Slider',
+    category: 'form',
+    path: '/components/slider',
+    description: 'Range slider input',
+    status: 'complete'
+  },
+  {
+    id: 'upload',
+    name: 'Upload',
+    category: 'form',
+    path: '/components/upload',
+    description: 'File upload component',
+    status: 'complete'
+  },
+  
+  // Other Components
+  {
+    id: 'drawer',
+    name: 'Drawer',
+    category: 'overlay',
+    path: '/components/drawer',
+    description: 'Side panel drawer',
+    status: 'complete'
+  },
+  {
+    id: 'steps',
+    name: 'Steps',
+    category: 'navigation',
+    path: '/components/steps',
+    description: 'Step indicator component',
+    status: 'complete'
+  },
+  {
+    id: 'pagination',
+    name: 'Pagination',
+    category: 'navigation',
+    path: '/components/pagination',
+    description: 'Pagination navigation',
     status: 'complete'
   }
 ];
