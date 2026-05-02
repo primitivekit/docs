@@ -35,13 +35,58 @@
   }
 }
 
-/* Reduce navbar height */
+/* Reduce navbar height and center content */
 :root {
-  --navbar-height: 3.5rem !important;
+  --navbar-height: 3rem !important;
 }
 
+.hextra-navbar,
+.hextra-nav-container,
 .hextra-nav-container-blur {
   height: var(--navbar-height) !important;
+  min-height: var(--navbar-height) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Center navbar content */
+.hextra-navbar > * {
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+}
+
+/* Adjust navbar items spacing and alignment */
+.hextra-navbar nav,
+.hextra-navbar .hextra-navbar-content {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+/* Fix logo/title alignment */
+.hextra-navbar a[href="/"] {
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+}
+
+/* Adjust search and menu items */
+.hextra-navbar input,
+.hextra-navbar button,
+.hextra-navbar .hextra-search-wrapper {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Fix mobile menu button alignment */
+.hextra-hamburger-menu {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 /* ============================================
