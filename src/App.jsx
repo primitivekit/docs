@@ -10,7 +10,7 @@ import './styles/global.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/docs">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Introduction />} />
