@@ -61,7 +61,7 @@ nav .hx\:h-16,
 }
 
 /* Direct child of navbar - full width with space-between */
-.hextra-navbar > div:first-child {
+.hextra-navbar>div:first-child {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
@@ -81,7 +81,7 @@ nav .hx\:h-16,
 
 /* Menu container on right side */
 .hextra-navbar nav,
-.hextra-navbar > div:first-child > div:last-child {
+.hextra-navbar>div:first-child>div:last-child {
   display: flex !important;
   align-items: center !important;
   gap: 1rem !important;
@@ -152,7 +152,7 @@ nav .hx\:h-16,
 
 /* But search results dropdown should have border */
 :root[class~="dark"] .hextra-search-wrapper[data-state="open"],
-:root[class~="dark"] .hextra-search-wrapper > div[role="dialog"] {
+:root[class~="dark"] .hextra-search-wrapper>div[role="dialog"] {
   background-color: #000000 !important;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 1) !important;
   border: 1px solid #1f1f1f !important;
@@ -403,4 +403,11 @@ nav .hx\:h-16,
   width: 1rem;
   height: 1rem;
   flex-shrink: 0;
+}
+
+
+:root[class~="dark"] .chroma {
+  border: 1px solid oklch(27.123% 0.01659 259.809) !important;
+  background-color: #000000 !important;
+  /* background-color: oklch(16.306% 0.01625 261.509) !important; */
 }
