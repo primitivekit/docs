@@ -97,38 +97,9 @@ nav .hx\:h-16,
 
 /* Remove border from search wrapper container */
 .hextra-search-wrapper,
-.hextra-navbar .hextra-search-wrapper,
-nav .hextra-search-wrapper {
-  border: none !important;
-  border-width: 0 !important;
-  box-shadow: none !important;
-  outline: none !important;
-  background: transparent !important;
-  display: flex !important;
-  align-items: center !important;
-}
-
-/* Remove any before/after pseudo-elements */
-.hextra-search-wrapper::before,
-.hextra-search-wrapper::after,
-.hextra-navbar .hextra-search-wrapper::before,
-.hextra-navbar .hextra-search-wrapper::after {
-  display: none !important;
-  content: none !important;
-}
-
-/* Remove any padding/margin that might cause visual issues */
 .hextra-navbar .hextra-search-wrapper {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-/* Also target the input inside */
-.hextra-search-wrapper input,
-.hextra-navbar .hextra-search-wrapper input {
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-left: none !important;
-  border-right: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* Adjust search and menu items */
