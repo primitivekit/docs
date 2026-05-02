@@ -27,151 +27,194 @@ pageRef = "/docs"
 weight = 1
 
 [[menu.main]]
-name = "Components"
-pageRef = "/docs/components"
+name = "React"
+pageRef = "/docs/react"
 weight = 2
 
 [[menu.main]]
-name = "Design Tokens"
-pageRef = "/docs/design-tokens"
+name = "Showcase"
+pageRef = "/showcase"
 weight = 3
+
+[[menu.main]]
+name = "Blog"
+pageRef = "/blog"
+weight = 4
 
 [[menu.main]]
 name = "GitHub"
 url = "https://github.com/primitivekit/react"
-weight = 4
+weight = 5
 
 [[menu.sidebar]]
 name = "Getting Started"
 weight = 1
 
 [[menu.sidebar]]
-name = "Installation"
-pageRef = "/docs/installation"
+name = "Introduction"
+pageRef = "/docs"
 parent = "Getting Started"
 weight = 1
 
 [[menu.sidebar]]
-name = "Customization"
-pageRef = "/docs/customization"
+name = "Installation"
+pageRef = "/docs/installation"
 parent = "Getting Started"
 weight = 2
 
 [[menu.sidebar]]
-name = "Accessibility"
-pageRef = "/docs/accessibility"
+name = "Quick Start"
+pageRef = "/docs/quick-start"
 parent = "Getting Started"
 weight = 3
 
 [[menu.sidebar]]
-name = "Design Tokens"
-pageRef = "/docs/design-tokens"
-parent = "Getting Started"
-weight = 4
-
-[[menu.sidebar]]
-name = "Components"
+name = "Frameworks"
 weight = 2
 
 [[menu.sidebar]]
+name = "React"
+pageRef = "/docs/react"
+parent = "Frameworks"
+weight = 1
+
+[[menu.sidebar]]
+name = "Vue (Coming Soon)"
+pageRef = "/docs/vue"
+parent = "Frameworks"
+weight = 2
+
+[[menu.sidebar]]
+name = "Angular (Coming Soon)"
+pageRef = "/docs/angular"
+parent = "Frameworks"
+weight = 3
+
+[[menu.sidebar]]
+name = "Astro (Coming Soon)"
+pageRef = "/docs/astro"
+parent = "Frameworks"
+weight = 4
+
+[[menu.sidebar]]
+name = "Guides"
+weight = 3
+
+[[menu.sidebar]]
+name = "Customization"
+pageRef = "/docs/customization"
+parent = "Guides"
+weight = 1
+
+[[menu.sidebar]]
+name = "Accessibility"
+pageRef = "/docs/accessibility"
+parent = "Guides"
+weight = 2
+
+[[menu.sidebar]]
+name = "Design Tokens"
+pageRef = "/docs/design-tokens"
+parent = "Guides"
+weight = 3
+
+[[menu.sidebar]]
+name = "Theming"
+pageRef = "/docs/theming"
+parent = "Guides"
+weight = 4
+
+[[menu.sidebar]]
+name = "React Components"
+weight = 4
+
+[[menu.sidebar]]
 name = "Form Components"
-parent = "Components"
+parent = "React Components"
 weight = 1
 
 [[menu.sidebar]]
 name = "Button"
-pageRef = "/docs/components/button"
+pageRef = "/docs/react/button"
 parent = "Form Components"
 weight = 1
 
 [[menu.sidebar]]
 name = "Input"
-pageRef = "/docs/components/input"
+pageRef = "/docs/react/input"
 parent = "Form Components"
 weight = 2
 
 [[menu.sidebar]]
 name = "Select"
-pageRef = "/docs/components/select"
+pageRef = "/docs/react/select"
 parent = "Form Components"
 weight = 3
 
 [[menu.sidebar]]
 name = "Checkbox"
-pageRef = "/docs/components/checkbox"
+pageRef = "/docs/react/checkbox"
 parent = "Form Components"
 weight = 4
 
 [[menu.sidebar]]
 name = "Radio"
-pageRef = "/docs/components/radio"
+pageRef = "/docs/react/radio"
 parent = "Form Components"
 weight = 5
 
 [[menu.sidebar]]
 name = "Switch"
-pageRef = "/docs/components/switch"
+pageRef = "/docs/react/switch"
 parent = "Form Components"
 weight = 6
 
 [[menu.sidebar]]
 name = "Textarea"
-pageRef = "/docs/components/textarea"
+pageRef = "/docs/react/textarea"
 parent = "Form Components"
 weight = 7
 
 [[menu.sidebar]]
 name = "Slider"
-pageRef = "/docs/components/slider"
+pageRef = "/docs/react/slider"
 parent = "Form Components"
 weight = 8
 
 [[menu.sidebar]]
-name = "Upload"
-pageRef = "/docs/components/upload"
-parent = "Form Components"
-weight = 9
-
-[[menu.sidebar]]
 name = "Layout Components"
-parent = "Components"
+parent = "React Components"
 weight = 2
 
 [[menu.sidebar]]
 name = "Card"
-pageRef = "/docs/components/card"
+pageRef = "/docs/react/card"
 parent = "Layout Components"
 weight = 1
 
 [[menu.sidebar]]
 name = "Container"
-pageRef = "/docs/components/container"
+pageRef = "/docs/react/container"
 parent = "Layout Components"
 weight = 2
 
 [[menu.sidebar]]
 name = "Grid"
-pageRef = "/docs/components/grid"
+pageRef = "/docs/react/grid"
 parent = "Layout Components"
 weight = 3
 
 [[menu.sidebar]]
 name = "Stack"
-pageRef = "/docs/components/stack"
+pageRef = "/docs/react/stack"
 parent = "Layout Components"
 weight = 4
 
 [[menu.sidebar]]
 name = "Divider"
-pageRef = "/docs/components/divider"
+pageRef = "/docs/react/divider"
 parent = "Layout Components"
 weight = 5
-
-[[menu.sidebar]]
-name = "Space"
-pageRef = "/docs/components/space"
-parent = "Layout Components"
-weight = 6
 
 [params]
 description = "A flexible, accessible React component library with 600+ design tokens. Zero hardcoded values. Complete customization."
@@ -183,7 +226,7 @@ theme.displayToggle = true
 footer.displayCopyright = true
 footer.displayPoweredBy = false
 editURL.enable = true
-editURL.base = "https://github.com/primitivekit/docs/edit/main"
+editURL.base = "https://github.com/primitivekit/docs/edit/main/content"
 
 [params.search]
 enable = false
