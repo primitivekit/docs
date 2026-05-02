@@ -114,15 +114,26 @@ Your content here...
 
 The site automatically deploys to GitHub Pages when you push to the `main` branch.
 
-### Manual Deployment
+### Automatic Deployment Workflow
 
-```bash
-# Build the site
-hugo --minify
+1. **Edit content** - Make changes to markdown files in `content/`
+2. **Commit and push** - Push to `main` branch
+3. **GitHub Actions builds** - Automatically builds Hugo site (~30s)
+4. **Deploys to gh-pages** - Pushes build to `gh-pages` branch
+5. **GitHub Pages publishes** - Site goes live (~60s)
 
-# Deploy to GitHub Pages
-# (Handled by GitHub Actions)
-```
+**Total time**: ~90 seconds from push to live
+
+### Important Notes
+
+- ✅ **DO** commit source files (content, config, theme)
+- ❌ **DON'T** commit the `public/` folder (build output)
+- ✅ **DO** test locally with `hugo server`
+- ❌ **DON'T** manually edit the `gh-pages` branch
+
+The `public/` folder is ignored by git and built automatically by GitHub Actions.
+
+See [DEPLOYMENT_WORKFLOW.md](./DEPLOYMENT_WORKFLOW.md) for detailed information.
 
 ## Configuration
 
