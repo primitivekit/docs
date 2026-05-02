@@ -15,7 +15,6 @@ import './styles/global.css';
 function App() {
   return (
     <BrowserRouter 
-      basename="/docs"
       future={{
         v7_startTransition: true,
         v7_relativeSplatPath: true

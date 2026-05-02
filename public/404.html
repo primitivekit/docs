@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <title>PrimitiveKit Documentation</title>
     <script>
-      // Single Page Apps for GitHub Pages
-      // Redirect to index.html with path as query parameter
-      sessionStorage.redirect = location.href;
+      // Single Page Apps for GitHub Pages with Custom Domain
+      // Store the path and redirect to index
+      sessionStorage.redirect = location.pathname + location.search + location.hash;
     </script>
-    <meta http-equiv="refresh" content="0;URL='/docs/'"></meta>
+    <meta http-equiv="refresh" content="0;URL='/'"></meta>
   </head>
   <body>
   </body>
