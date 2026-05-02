@@ -1,6 +1,8 @@
 ---
 title: PrimitiveKit
 toc: false
+sidebar:
+  exclude: true
 ---
 
 <div class="hx-mt-6 hx-mb-6">
