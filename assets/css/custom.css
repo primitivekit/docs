@@ -23,6 +23,28 @@
 }
 
 /* ============================================
+ * NAVBAR BLUR & TRANSPARENCY
+ * ============================================ */
+
+/* Reduce navbar blur and increase transparency */
+@supports ((-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))) {
+  .hextra-nav-container-blur:where(.dark, .dark *) {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+  }
+}
+
+/* Reduce navbar height */
+:root {
+  --navbar-height: 3.5rem !important;
+}
+
+.hextra-nav-container-blur {
+  height: var(--navbar-height) !important;
+}
+
+/* ============================================
  * DROPDOWN & MENU BACKGROUNDS
  * ============================================ */
 
