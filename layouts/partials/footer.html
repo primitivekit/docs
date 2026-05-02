@@ -120,7 +120,7 @@
       <div class="footer-bottom hx-border-t hx-border-gray-200 dark:hx-border-gray-800 hx-pt-8 hx-flex hx-flex-col md:hx-flex-row hx-justify-between hx-items-center hx-gap-4">
         <div class="hx-text-sm hx-text-gray-600 dark:hx-text-gray-400">
           {{- if .Site.Params.footer.displayCopyright -}}
-            {{- $copyright := .Site.GetPage "i18n" | .Param "copyright" -}}
+            {{- $copyright := i18n "copyright" -}}
             {{- with $copyright -}}
               {{ . | markdownify }}
             {{- else -}}
