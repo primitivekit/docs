@@ -1,0 +1,45 @@
+name: Update Library and Deploy
+
+on:
+  repository_dispatch:
+    types: [library-published]
+  push:
+    branches:
+      - main
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Update library version
+        if: github.event_name == 'repository_dispatch'
+        run: |
+          VERSION="${{ github.event.client_payload.version }}"
+          echo "Updating to version $VERSION"
+          npm install @primitivekit/react@$VERSION
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add package.json package-lock.json
+          git commit -m "Update @primitivekit/react to v$VERSION" || echo "No changes to commit"
+          git push || echo "Nothing to push"
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Build
+        run: npm run build
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          cname: false

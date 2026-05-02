@@ -204,7 +204,7 @@ export const components: ComponentInfo[] = [
     category: 'overlay',
     path: '/components/popover',
     description: 'Popover content overlay',
-    status: 'in-progress'
+    status: 'complete'
   },
   {
     id: 'dropdown',
@@ -212,7 +212,7 @@ export const components: ComponentInfo[] = [
     category: 'overlay',
     path: '/components/dropdown',
     description: 'Dropdown menu component',
-    status: 'in-progress'
+    status: 'complete'
   }
 ];
 
