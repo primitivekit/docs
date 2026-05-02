@@ -20,27 +20,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Setup Node
-        uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          submodules: recursive
+          fetch-depth: 0
       
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
       
-      - name: Build with Next.js
-        run: npm run build
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+      
+      - name: Build with Hugo
+        run: hugo --minify
         env:
-          NODE_ENV: production
-      
-      - name: Add CNAME
-        run: echo "primitivekit.com" > ./out/CNAME
+          HUGO_ENVIRONMENT: production
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./public
           cname: primitivekit.com

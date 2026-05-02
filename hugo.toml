@@ -1,0 +1,188 @@
+baseURL = 'https://primitivekit.com/'
+title = 'PrimitiveKit'
+
+[module]
+[[module.imports]]
+path = "github.com/imfing/hextra"
+
+enableRobotsTXT = true
+enableGitInfo = true
+enableEmoji = true
+hasCJKLanguage = false
+
+[services.googleAnalytics]
+ID = ''
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+noClasses = false
+
+[menu]
+[[menu.main]]
+name = "Documentation"
+pageRef = "/docs"
+weight = 1
+
+[[menu.main]]
+name = "Components"
+pageRef = "/docs/components"
+weight = 2
+
+[[menu.main]]
+name = "Design Tokens"
+pageRef = "/docs/design-tokens"
+weight = 3
+
+[[menu.main]]
+name = "GitHub"
+url = "https://github.com/primitivekit/react"
+weight = 4
+
+[[menu.sidebar]]
+name = "Getting Started"
+weight = 1
+
+[[menu.sidebar]]
+name = "Installation"
+pageRef = "/docs/installation"
+parent = "Getting Started"
+weight = 1
+
+[[menu.sidebar]]
+name = "Customization"
+pageRef = "/docs/customization"
+parent = "Getting Started"
+weight = 2
+
+[[menu.sidebar]]
+name = "Accessibility"
+pageRef = "/docs/accessibility"
+parent = "Getting Started"
+weight = 3
+
+[[menu.sidebar]]
+name = "Design Tokens"
+pageRef = "/docs/design-tokens"
+parent = "Getting Started"
+weight = 4
+
+[[menu.sidebar]]
+name = "Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Form Components"
+parent = "Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Button"
+pageRef = "/docs/components/button"
+parent = "Form Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Input"
+pageRef = "/docs/components/input"
+parent = "Form Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Select"
+pageRef = "/docs/components/select"
+parent = "Form Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Checkbox"
+pageRef = "/docs/components/checkbox"
+parent = "Form Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Radio"
+pageRef = "/docs/components/radio"
+parent = "Form Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Switch"
+pageRef = "/docs/components/switch"
+parent = "Form Components"
+weight = 6
+
+[[menu.sidebar]]
+name = "Textarea"
+pageRef = "/docs/components/textarea"
+parent = "Form Components"
+weight = 7
+
+[[menu.sidebar]]
+name = "Slider"
+pageRef = "/docs/components/slider"
+parent = "Form Components"
+weight = 8
+
+[[menu.sidebar]]
+name = "Upload"
+pageRef = "/docs/components/upload"
+parent = "Form Components"
+weight = 9
+
+[[menu.sidebar]]
+name = "Layout Components"
+parent = "Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Card"
+pageRef = "/docs/components/card"
+parent = "Layout Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Container"
+pageRef = "/docs/components/container"
+parent = "Layout Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Grid"
+pageRef = "/docs/components/grid"
+parent = "Layout Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Stack"
+pageRef = "/docs/components/stack"
+parent = "Layout Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Divider"
+pageRef = "/docs/components/divider"
+parent = "Layout Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Space"
+pageRef = "/docs/components/space"
+parent = "Layout Components"
+weight = 6
+
+[params]
+description = "A flexible, accessible React component library with 600+ design tokens. Zero hardcoded values. Complete customization."
+navbar.displayTitle = true
+navbar.displayLogo = false
+page.width = "wide"
+theme.default = "system"
+theme.displayToggle = true
+footer.displayCopyright = true
+footer.displayPoweredBy = false
+editURL.enable = true
+editURL.base = "https://github.com/primitivekit/docs/edit/main"
+
+[params.search]
+enable = false
