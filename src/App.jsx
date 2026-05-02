@@ -10,7 +10,13 @@ import './styles/global.css';
 
 function App() {
   return (
-    <BrowserRouter basename="/docs">
+    <BrowserRouter 
+      basename="/docs"
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true
+      }}
+    >
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Introduction />} />

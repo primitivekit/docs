@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, Package } from 'lucide-react';
+import { GitBranch, Package } from 'lucide-react';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import './Header.css';
 
@@ -25,7 +25,7 @@ const Header = () => {
             rel="noopener noreferrer"
             aria-label="View on GitHub"
           >
-            <Github size={18} />
+            <GitBranch size={18} />
           </a>
           <ThemeToggle />
         </nav>
