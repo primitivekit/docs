@@ -1,45 +1,59 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { componentsByCategory, categoryLabels } from '../../config/components';
 import './Sidebar.css';
 
 const Sidebar = () => {
-  const navItems = [
-    {
-      title: 'Getting Started',
-      items: [
-        { label: 'Introduction', path: '/' },
-        { label: 'Installation', path: '/installation' },
-        { label: 'Customization', path: '/customization' },
-        { label: 'Accessibility', path: '/accessibility' },
-      ]
-    },
-    {
-      title: 'Components',
-      items: [
-        { label: 'Button', path: '/components/button' },
-      ]
-    }
+  const gettingStartedItems = [
+    { label: 'Introduction', path: '/' },
+    { label: 'Installation', path: '/installation' },
+    { label: 'Customization', path: '/customization' },
+    { label: 'Accessibility', path: '/accessibility' },
   ];
 
   return (
     <aside className="sidebar" role="complementary" aria-label="Documentation navigation">
       <nav className="sidebar__nav">
-        {navItems.map((section) => (
-          <div key={section.title} className="sidebar__section">
-            <h3 className="sidebar__section-title">{section.title}</h3>
+        {/* Getting Started Section */}
+        <div className="sidebar__section">
+          <h3 className="sidebar__section-title">Getting Started</h3>
+          <ul className="sidebar__list">
+            {gettingStartedItems.map((item) => (
+              <li key={item.path} className="sidebar__item">
+                <NavLink
+                  to={item.path}
+                  className={({ isActive }) =>
+                    `sidebar__link ${isActive ? 'sidebar__link--active' : ''}`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Component Categories - Dynamically Generated */}
+        {Object.entries(componentsByCategory).map(([category, items]) => (
+          <div key={category} className="sidebar__section">
+            <h3 className="sidebar__section-title">
+              {categoryLabels[category as keyof typeof categoryLabels]}
+            </h3>
             <ul className="sidebar__list">
-              {section.items.map((item) => (
-                <li key={item.path} className="sidebar__item">
-                  <NavLink
-                    to={item.path}
-                    className={({ isActive }) =>
-                      `sidebar__link ${isActive ? 'sidebar__link--active' : ''}`
-                    }
-                  >
-                    {item.label}
-                  </NavLink>
-                </li>
-              ))}
+              {items
+                .filter(component => component.status === 'complete')
+                .map((component) => (
+                  <li key={component.id} className="sidebar__item">
+                    <NavLink
+                      to={component.path}
+                      className={({ isActive }) =>
+                        `sidebar__link ${isActive ? 'sidebar__link--active' : ''}`
+                      }
+                    >
+                      {component.name}
+                    </NavLink>
+                  </li>
+                ))}
             </ul>
           </div>
         ))}
