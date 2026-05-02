@@ -20,80 +20,529 @@
   --shiki-color-background: #0a0a0a !important;
 }
 
+/* ============================================
+ * MAIN BACKGROUNDS - Apply Everywhere
+ * ============================================ */
+
 /* Main background - Apply to body and all major containers */
 :root[class~="dark"] body,
 :root[class~="dark"] .hextra-container,
-:root[class~="dark"] main {
+:root[class~="dark"] main,
+:root[class~="dark"] html {
   background-color: #0a0a0a !important;
 }
 
+/* ============================================
+ * NAVBAR / HEADER
+ * ============================================ */
+
 /* Navbar background */
-:root[class~="dark"] .hextra-navbar {
+:root[class~="dark"] .hextra-navbar,
+:root[class~="dark"] nav,
+:root[class~="dark"] header {
   background-color: #0a0a0a !important;
   border-bottom-color: #1f1f1f !important;
 }
 
-/* Sidebar background */
+/* Navbar links */
+:root[class~="dark"] .hextra-navbar a {
+  color: #a3a3a3 !important;
+}
+
+:root[class~="dark"] .hextra-navbar a:hover {
+  color: #fafafa !important;
+}
+
+/* Search input in navbar */
+:root[class~="dark"] .hextra-navbar input,
+:root[class~="dark"] .hextra-navbar .hextra-search-input {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+  color: #fafafa !important;
+}
+
+:root[class~="dark"] .hextra-navbar input::placeholder {
+  color: #737373 !important;
+}
+
+/* Mobile menu */
+:root[class~="dark"] .hextra-navbar-menu {
+  background-color: #0a0a0a !important;
+  border-color: #1f1f1f !important;
+}
+
+/* ============================================
+ * THEME TOGGLE BUTTON
+ * ============================================ */
+
+:root[class~="dark"] button[aria-label*="theme"],
+:root[class~="dark"] .theme-toggle,
+:root[class~="dark"] [class*="theme"] button {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+  color: #fafafa !important;
+}
+
+:root[class~="dark"] button[aria-label*="theme"]:hover,
+:root[class~="dark"] .theme-toggle:hover {
+  background-color: #171717 !important;
+  border-color: #262626 !important;
+}
+
+/* ============================================
+ * SIDEBAR (Left)
+ * ============================================ */
+
 :root[class~="dark"] .hextra-sidebar,
-:root[class~="dark"] .hextra-sidebar-container {
+:root[class~="dark"] .hextra-sidebar-container,
+:root[class~="dark"] aside {
   background-color: #0a0a0a !important;
   border-right-color: #1f1f1f !important;
 }
 
-/* Content area background */
-:root[class~="dark"] .hextra-content,
-:root[class~="dark"] article {
-  background-color: #0a0a0a !important;
+/* Sidebar links */
+:root[class~="dark"] .hextra-sidebar a {
+  color: #a3a3a3 !important;
 }
 
-/* Footer background */
-:root[class~="dark"] .hextra-footer {
-  background-color: #0a0a0a !important;
-  border-top-color: #1f1f1f !important;
+:root[class~="dark"] .hextra-sidebar a:hover {
+  color: #fafafa !important;
+  background-color: #121212 !important;
 }
 
-/* Card backgrounds */
-:root[class~="dark"] .hextra-card {
+:root[class~="dark"] .hextra-sidebar a.active,
+:root[class~="dark"] .hextra-sidebar a[aria-current="page"] {
+  color: #38bdf8 !important;
+  background-color: #121212 !important;
+}
+
+/* Sidebar section headers */
+:root[class~="dark"] .hextra-sidebar h3,
+:root[class~="dark"] .hextra-sidebar h4 {
+  color: #fafafa !important;
+}
+
+/* ============================================
+ * RIGHT SIDEBAR (TOC, Edit, Scroll to Top)
+ * ============================================ */
+
+:root[class~="dark"] .hextra-toc,
+:root[class~="dark"] .hextra-toc-container,
+:root[class~="dark"] [class*="toc"] {
+  background-color: #0a0a0a !important;
+  border-left-color: #1f1f1f !important;
+}
+
+/* TOC links */
+:root[class~="dark"] .hextra-toc a {
+  color: #a3a3a3 !important;
+}
+
+:root[class~="dark"] .hextra-toc a:hover {
+  color: #fafafa !important;
+}
+
+:root[class~="dark"] .hextra-toc a.active {
+  color: #38bdf8 !important;
+}
+
+/* Edit on GitHub link */
+:root[class~="dark"] .edit-page,
+:root[class~="dark"] [href*="github.com"][href*="edit"] {
+  color: #a3a3a3 !important;
   background-color: #121212 !important;
   border-color: #1f1f1f !important;
+}
+
+:root[class~="dark"] .edit-page:hover,
+:root[class~="dark"] [href*="github.com"][href*="edit"]:hover {
+  color: #fafafa !important;
+  background-color: #171717 !important;
+  border-color: #262626 !important;
+}
+
+/* Scroll to top button */
+:root[class~="dark"] .scroll-to-top,
+:root[class~="dark"] [class*="scroll-top"],
+:root[class~="dark"] button[aria-label*="scroll"] {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+  color: #fafafa !important;
+}
+
+:root[class~="dark"] .scroll-to-top:hover,
+:root[class~="dark"] [class*="scroll-top"]:hover,
+:root[class~="dark"] button[aria-label*="scroll"]:hover {
+  background-color: #171717 !important;
+  border-color: #262626 !important;
+}
+
+/* ============================================
+ * CONTENT AREA
+ * ============================================ */
+
+:root[class~="dark"] .hextra-content,
+:root[class~="dark"] article,
+:root[class~="dark"] .content {
+  background-color: #0a0a0a !important;
+  color: #e5e5e5 !important;
+}
+
+/* Headings */
+:root[class~="dark"] h1,
+:root[class~="dark"] h2,
+:root[class~="dark"] h3,
+:root[class~="dark"] h4,
+:root[class~="dark"] h5,
+:root[class~="dark"] h6 {
+  color: #fafafa !important;
+}
+
+/* Paragraphs and text */
+:root[class~="dark"] p,
+:root[class~="dark"] li,
+:root[class~="dark"] td,
+:root[class~="dark"] span {
+  color: #e5e5e5 !important;
+}
+
+/* Links in content */
+:root[class~="dark"] .hextra-content a,
+:root[class~="dark"] article a {
+  color: #38bdf8 !important;
+}
+
+:root[class~="dark"] .hextra-content a:hover,
+:root[class~="dark"] article a:hover {
+  color: #7dd3fc !important;
+}
+
+/* ============================================
+ * DROPDOWNS & MENUS
+ * ============================================ */
+
+:root[class~="dark"] .dropdown,
+:root[class~="dark"] .dropdown-menu,
+:root[class~="dark"] [role="menu"],
+:root[class~="dark"] [class*="menu"] {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+:root[class~="dark"] .dropdown-item,
+:root[class~="dark"] [role="menuitem"] {
+  color: #e5e5e5 !important;
+}
+
+:root[class~="dark"] .dropdown-item:hover,
+:root[class~="dark"] [role="menuitem"]:hover {
+  background-color: #171717 !important;
+  color: #fafafa !important;
+}
+
+/* Search dropdown */
+:root[class~="dark"] .search-results,
+:root[class~="dark"] [class*="search-result"] {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+}
+
+:root[class~="dark"] .search-result-item {
+  color: #e5e5e5 !important;
+  border-bottom-color: #1f1f1f !important;
+}
+
+:root[class~="dark"] .search-result-item:hover {
+  background-color: #171717 !important;
+}
+
+/* ============================================
+ * CODE BLOCKS & SYNTAX HIGHLIGHTING
+ * ============================================ */
+
+/* Inline code */
+:root[class~="dark"] code {
+  background-color: #121212 !important;
+  border: 1px solid #1f1f1f !important;
+  color: #e5e5e5 !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 0.25rem !important;
 }
 
 /* Code blocks */
 :root[class~="dark"] pre {
   background-color: #0d1117 !important;
   border: 1px solid #1f1f1f !important;
+  border-radius: 0.5rem !important;
 }
 
-:root[class~="dark"] code {
-  background-color: #161b22 !important;
-  border: 1px solid #1f1f1f !important;
+:root[class~="dark"] pre code {
+  background-color: transparent !important;
+  border: none !important;
+  color: #e5e5e5 !important;
 }
 
-:root[class~="dark"] .hextra-code-block {
+/* Code block wrapper */
+:root[class~="dark"] .hextra-code-block,
+:root[class~="dark"] [class*="code-block"],
+:root[class~="dark"] .highlight {
   background-color: #0d1117 !important;
+  border: 1px solid #1f1f1f !important;
+  border-radius: 0.5rem !important;
 }
 
-/* Tables */
+/* Code block header/toolbar */
+:root[class~="dark"] .code-block-header,
+:root[class~="dark"] [class*="code-header"] {
+  background-color: #0a0a0a !important;
+  border-bottom-color: #1f1f1f !important;
+}
+
+/* Copy button in code blocks */
+:root[class~="dark"] .copy-button,
+:root[class~="dark"] button[class*="copy"] {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+  color: #a3a3a3 !important;
+}
+
+:root[class~="dark"] .copy-button:hover,
+:root[class~="dark"] button[class*="copy"]:hover {
+  background-color: #171717 !important;
+  color: #fafafa !important;
+}
+
+/* ============================================
+ * CARDS & CONTAINERS
+ * ============================================ */
+
+:root[class~="dark"] .hextra-card,
+:root[class~="dark"] .card,
+:root[class~="dark"] [class*="card"] {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+}
+
+:root[class~="dark"] .hextra-card:hover,
+:root[class~="dark"] .card:hover {
+  background-color: #171717 !important;
+  border-color: #262626 !important;
+}
+
+/* Feature cards on home page */
+:root[class~="dark"] .hextra-feature-card {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+}
+
+:root[class~="dark"] .hextra-feature-card:hover {
+  background-color: #171717 !important;
+  border-color: #262626 !important;
+}
+
+/* ============================================
+ * TABLES
+ * ============================================ */
+
 :root[class~="dark"] table {
   border-color: #1f1f1f !important;
+  background-color: transparent !important;
+}
+
+:root[class~="dark"] thead {
+  background-color: #121212 !important;
+  border-bottom-color: #1f1f1f !important;
 }
 
 :root[class~="dark"] th {
   background-color: #121212 !important;
   border-color: #1f1f1f !important;
+  color: #fafafa !important;
 }
 
 :root[class~="dark"] td {
   border-color: #1f1f1f !important;
+  color: #e5e5e5 !important;
 }
 
-/* Search */
-:root[class~="dark"] .hextra-search-input {
+:root[class~="dark"] tr:hover {
+  background-color: #0d0d0d !important;
+}
+
+/* ============================================
+ * BLOCKQUOTES & CALLOUTS
+ * ============================================ */
+
+:root[class~="dark"] blockquote {
+  background-color: #121212 !important;
+  border-left-color: #38bdf8 !important;
+  color: #e5e5e5 !important;
+}
+
+:root[class~="dark"] .callout,
+:root[class~="dark"] [class*="callout"],
+:root[class~="dark"] .admonition {
   background-color: #121212 !important;
   border-color: #1f1f1f !important;
 }
 
-/* Scrollbar */
+/* ============================================
+ * BUTTONS
+ * ============================================ */
+
+:root[class~="dark"] button,
+:root[class~="dark"] .button,
+:root[class~="dark"] [class*="btn"] {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+  color: #fafafa !important;
+}
+
+:root[class~="dark"] button:hover,
+:root[class~="dark"] .button:hover,
+:root[class~="dark"] [class*="btn"]:hover {
+  background-color: #171717 !important;
+  border-color: #262626 !important;
+}
+
+/* Primary buttons */
+:root[class~="dark"] .button-primary,
+:root[class~="dark"] [class*="btn-primary"] {
+  background-color: #0ea5e9 !important;
+  border-color: #0ea5e9 !important;
+  color: #ffffff !important;
+}
+
+:root[class~="dark"] .button-primary:hover,
+:root[class~="dark"] [class*="btn-primary"]:hover {
+  background-color: #0284c7 !important;
+  border-color: #0284c7 !important;
+}
+
+/* ============================================
+ * INPUTS & FORMS
+ * ============================================ */
+
+:root[class~="dark"] input,
+:root[class~="dark"] textarea,
+:root[class~="dark"] select {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+  color: #fafafa !important;
+}
+
+:root[class~="dark"] input:focus,
+:root[class~="dark"] textarea:focus,
+:root[class~="dark"] select:focus {
+  background-color: #171717 !important;
+  border-color: #38bdf8 !important;
+  outline-color: #38bdf8 !important;
+}
+
+:root[class~="dark"] input::placeholder,
+:root[class~="dark"] textarea::placeholder {
+  color: #737373 !important;
+}
+
+/* ============================================
+ * MODALS & OVERLAYS
+ * ============================================ */
+
+:root[class~="dark"] .modal,
+:root[class~="dark"] [class*="modal"],
+:root[class~="dark"] [role="dialog"] {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+}
+
+:root[class~="dark"] .modal-header,
+:root[class~="dark"] [class*="modal-header"] {
+  background-color: #0a0a0a !important;
+  border-bottom-color: #1f1f1f !important;
+}
+
+:root[class~="dark"] .modal-footer,
+:root[class~="dark"] [class*="modal-footer"] {
+  background-color: #0a0a0a !important;
+  border-top-color: #1f1f1f !important;
+}
+
+:root[class~="dark"] .overlay,
+:root[class~="dark"] [class*="overlay"] {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* ============================================
+ * BADGES & TAGS
+ * ============================================ */
+
+:root[class~="dark"] .badge,
+:root[class~="dark"] .tag,
+:root[class~="dark"] [class*="badge"],
+:root[class~="dark"] [class*="tag"] {
+  background-color: #171717 !important;
+  border-color: #262626 !important;
+  color: #e5e5e5 !important;
+}
+
+/* ============================================
+ * BREADCRUMBS
+ * ============================================ */
+
+:root[class~="dark"] .breadcrumb,
+:root[class~="dark"] [class*="breadcrumb"] {
+  color: #a3a3a3 !important;
+}
+
+:root[class~="dark"] .breadcrumb a {
+  color: #a3a3a3 !important;
+}
+
+:root[class~="dark"] .breadcrumb a:hover {
+  color: #fafafa !important;
+}
+
+/* ============================================
+ * PAGINATION
+ * ============================================ */
+
+:root[class~="dark"] .pagination,
+:root[class~="dark"] [class*="pagination"] {
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+}
+
+:root[class~="dark"] .pagination a {
+  color: #a3a3a3 !important;
+  background-color: #121212 !important;
+  border-color: #1f1f1f !important;
+}
+
+:root[class~="dark"] .pagination a:hover {
+  color: #fafafa !important;
+  background-color: #171717 !important;
+}
+
+:root[class~="dark"] .pagination .active {
+  background-color: #38bdf8 !important;
+  border-color: #38bdf8 !important;
+  color: #0a0a0a !important;
+}
+
+/* ============================================
+ * FOOTER
+ * ============================================ */
+
+:root[class~="dark"] .hextra-footer {
+  background-color: #0a0a0a !important;
+  border-top-color: #1f1f1f !important;
+}
+
+/* ============================================
+ * SCROLLBAR
+ * ============================================ */
+
 :root[class~="dark"] ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
@@ -112,6 +561,20 @@
 
 :root[class~="dark"] ::-webkit-scrollbar-thumb:hover {
   background: #404040;
+}
+
+/* ============================================
+ * SELECTION
+ * ============================================ */
+
+:root[class~="dark"] ::selection {
+  background-color: #38bdf8 !important;
+  color: #0a0a0a !important;
+}
+
+:root[class~="dark"] ::-moz-selection {
+  background-color: #38bdf8 !important;
+  color: #0a0a0a !important;
 }
 
 /* ============================================
