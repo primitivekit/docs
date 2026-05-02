@@ -170,7 +170,7 @@ export const components: ComponentInfo[] = [
     category: 'navigation',
     path: '/components/tabs',
     description: 'Tabbed navigation interface',
-    status: 'in-progress'
+    status: 'complete'
   },
   {
     id: 'breadcrumb',
@@ -178,7 +178,7 @@ export const components: ComponentInfo[] = [
     category: 'navigation',
     path: '/components/breadcrumb',
     description: 'Breadcrumb navigation trail',
-    status: 'in-progress'
+    status: 'complete'
   },
   
   // Overlay Components
@@ -188,7 +188,7 @@ export const components: ComponentInfo[] = [
     category: 'overlay',
     path: '/components/modal',
     description: 'Modal dialog overlay',
-    status: 'in-progress'
+    status: 'complete'
   },
   {
     id: 'tooltip',
@@ -196,7 +196,7 @@ export const components: ComponentInfo[] = [
     category: 'overlay',
     path: '/components/tooltip',
     description: 'Contextual tooltip on hover',
-    status: 'in-progress'
+    status: 'complete'
   },
   {
     id: 'popover',
