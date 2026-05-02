@@ -1,10 +1,13 @@
 import React from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { components } from '../config/components';
 import MarkdownRenderer from '../components/MarkdownRenderer/MarkdownRenderer';
 
-const GenericComponent = () => {
-  const { componentId } = useParams<{ componentId: string }>();
+interface GenericComponentProps {
+  componentId: string;
+}
+
+const GenericComponent: React.FC<GenericComponentProps> = ({ componentId }) => {
   const component = components.find(c => c.id === componentId);
 
   if (!component) {

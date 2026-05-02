@@ -36,8 +36,8 @@ function App() {
             .map(component => (
               <Route
                 key={component.id}
-                path={`components/${component.id}`}
-                element={<GenericComponent />}
+                path={component.path}
+                element={<GenericComponent componentId={component.id} />}
               />
             ))}
           
