@@ -1,34 +1,35 @@
+# Hugo build output
+/public/
+/resources/_gen/
+
+# Hugo cache
+.hugo_build.lock
+
 # Dependencies
-node_modules
-/.pnp
-.pnp.js
+node_modules/
 
-# Testing
-/coverage
-
-# Next.js
-/.next/
-/out/
-next-env.d.ts
-
-# Production
-/build
-/dist
-
-# Misc
+# OS files
 .DS_Store
 *.pem
+Thumbs.db
 
-# Debug
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
 # Local env files
+.env
 .env*.local
 
-# Vercel
-.vercel
-
-# TypeScript
-*.tsbuildinfo
+# Temporary files
+*.tmp
+*.temp
