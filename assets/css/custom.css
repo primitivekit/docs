@@ -67,11 +67,30 @@
   width: 100% !important;
 }
 
-/* Fix logo/title alignment */
+/* Main navbar container - space between logo and menu */
+.hextra-navbar > div,
+.hextra-navbar > nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+/* Logo/title on left side */
 .hextra-navbar a[href="/"] {
   display: flex !important;
   align-items: center !important;
   height: 100% !important;
+  margin-right: auto !important;
+}
+
+/* Menu items on right side */
+.hextra-navbar .hextra-navbar-content,
+.hextra-navbar nav > div:last-child {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  margin-left: auto !important;
 }
 
 /* Adjust search and menu items */
@@ -82,11 +101,17 @@
   margin-bottom: 0 !important;
 }
 
-/* Fix mobile menu button alignment */
+/* Hide mobile menu button on desktop */
 .hextra-hamburger-menu {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+@media (min-width: 768px) {
+  .hextra-hamburger-menu {
+    display: none !important;
+  }
 }
 
 /* ============================================
