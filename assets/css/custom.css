@@ -123,6 +123,16 @@ nav .hx\:h-16,
   }
 }
 
+/* Force theme toggle to show on all pages */
+button[aria-label*="theme"],
+button[aria-label*="Theme"],
+.theme-toggle,
+[data-theme-toggle] {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 /* ============================================
  * DROPDOWN & MENU BACKGROUNDS
  * ============================================ */
