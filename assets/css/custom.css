@@ -46,6 +46,9 @@
   height: var(--navbar-height) !important;
   min-height: var(--navbar-height) !important;
   width: 100% !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 50 !important;
 }
 
 /* Direct child of navbar - full width with space-between */
