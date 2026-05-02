@@ -48,16 +48,22 @@
   width: 100% !important;
 }
 
+/* Override Hextra's h-16 class (4rem) to use our custom height */
+.hextra-navbar .hx\:h-16,
+.hextra-navbar [class*="hx:h-16"] {
+  height: var(--navbar-height) !important;
+}
+
 /* Direct child of navbar - full width with space-between */
 .hextra-navbar > div:first-child {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
   width: 100% !important;
-  max-width: var(--hextra-max-navbar-width, 90rem) !important;
+  max-width: var(--hextra-max-navbar-width, 40rem) !important;
   margin: 0 auto !important;
   padding: 0 2rem !important;
-  height: 100% !important;
+  /* height: 100% !important; */
 }
 
 /* Logo/title on left side - no auto margin */
