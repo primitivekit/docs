@@ -1,0 +1,44 @@
+.code-block {
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.code-block__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+.code-block__language {
+  color: #858585;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.code-block__copy-btn {
+  background: transparent;
+  border: 1px solid #444;
+  color: #ccc;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.code-block__copy-btn:hover {
+  background: #333;
+  border-color: #666;
+  color: white;
+}
+
+.code-block__copy-btn:active {
+  transform: scale(0.95);
+}
