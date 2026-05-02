@@ -4,9 +4,15 @@
 
 See what people are building with PrimitiveKit.
 
+---
+
 ## Featured Projects
 
-Coming soon! We'll feature amazing projects built with PrimitiveKit here.
+{{< cards >}}
+  {{< card link="#" title="Coming Soon" subtitle="We'll feature amazing projects built with PrimitiveKit here" icon="star" >}}
+{{< /cards >}}
+
+---
 
 ## Submit Your Project
 
@@ -16,19 +22,18 @@ Built something cool with PrimitiveKit? We'd love to feature it!
 - Tag us on Twitter (coming soon)
 - Email us (coming soon)
 
+---
+
 ## Categories
 
-### Web Applications
-Projects using PrimitiveKit for web apps
+{{< cards >}}
+  {{< card title="Web Applications" subtitle="Projects using PrimitiveKit for web apps" icon="globe" >}}
+  {{< card title="Design Systems" subtitle="Companies using PrimitiveKit as their design system foundation" icon="template" >}}
+  {{< card title="Open Source" subtitle="Open source projects built with PrimitiveKit" icon="code" >}}
+  {{< card title="Templates" subtitle="Starter templates and boilerplates" icon="document-duplicate" >}}
+{{< /cards >}}
 
-### Design Systems
-Companies using PrimitiveKit as their design system foundation
-
-### Open Source
-Open source projects built with PrimitiveKit
-
-### Templates
-Starter templates and boilerplates
+---
 
 ## Coming Soon
 
