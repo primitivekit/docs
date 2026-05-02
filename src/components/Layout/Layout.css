@@ -12,14 +12,18 @@
 
 .layout__main {
   flex: 1;
-  padding: var(--spacing-2xl);
+  margin-left: var(--sidebar-width);
+  padding: var(--spacing-2xl) var(--spacing-xl);
+  max-width: calc(var(--max-content-width) + var(--sidebar-width) + var(--spacing-xl) * 2);
+}
+
+.layout__content {
   max-width: var(--max-content-width);
-  margin: 0 auto;
-  width: 100%;
 }
 
 @media (max-width: 768px) {
   .layout__main {
+    margin-left: 0;
     padding: var(--spacing-lg);
   }
 }

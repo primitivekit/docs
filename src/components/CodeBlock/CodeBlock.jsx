@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { Check, Copy } from 'lucide-react';
 import './CodeBlock.css';
 
-const CodeBlock = ({ code, language = 'jsx', showLineNumbers = true }) => {
+const CodeBlock = ({ code, language = 'jsx', showLineNumbers = false }) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -22,10 +23,20 @@ const CodeBlock = ({ code, language = 'jsx', showLineNumbers = true }) => {
         <span className="code-block__language">{language}</span>
         <button
           onClick={handleCopy}
-          className="code-block__copy-btn"
+          className={`code-block__copy-btn ${copied ? 'code-block__copy-btn--copied' : ''}`}
           aria-label={copied ? 'Copied!' : 'Copy code to clipboard'}
         >
-          {copied ? '✓ Copied!' : 'Copy'}
+          {copied ? (
+            <>
+              <Check size={14} />
+              Copied
+            </>
+          ) : (
+            <>
+              <Copy size={14} />
+              Copy
+            </>
+          )}
         </button>
       </div>
       <SyntaxHighlighter
@@ -34,8 +45,10 @@ const CodeBlock = ({ code, language = 'jsx', showLineNumbers = true }) => {
         showLineNumbers={showLineNumbers}
         customStyle={{
           margin: 0,
-          borderRadius: '0 0 0.5rem 0.5rem',
-          fontSize: '0.875rem'
+          borderRadius: 0,
+          fontSize: '14px',
+          padding: '16px',
+          background: '#0a0a0a'
         }}
       >
         {code}

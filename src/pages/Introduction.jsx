@@ -10,11 +10,11 @@ Welcome to the **Custom Component Library** documentation! This library provides
 
 Our component library is built on three core principles:
 
-### 🎨 Zero Hardcoded Values
+### Zero Hardcoded Values
 
 Every single style property is controlled through CSS variables. This means you have complete control over the appearance of every component without touching the source code.
 
-### ♿ Accessibility First
+### Accessibility First
 
 All components are built with accessibility in mind, following WCAG 2.1 guidelines. We include:
 
@@ -25,7 +25,7 @@ All components are built with accessibility in mind, following WCAG 2.1 guidelin
 - High contrast mode support
 - Reduced motion support
 
-### 🚀 Minimal & Lightweight
+### Minimal & Lightweight
 
 We keep dependencies to a minimum. Just React and CSS - no bloated UI frameworks or unnecessary abstractions.
 

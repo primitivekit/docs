@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Github, Package } from 'lucide-react';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import './Header.css';
 
 const Header = () => {
@@ -7,22 +9,25 @@ const Header = () => {
     <header className="header" role="banner">
       <div className="header__container">
         <Link to="/" className="header__logo">
-          <span className="header__logo-icon" aria-hidden="true">🎨</span>
-          <span className="header__logo-text">Component Library</span>
+          <span className="header__logo-icon">
+            <Package size={20} />
+          </span>
+          <span className="header__logo-text">PrimitiveKit</span>
         </Link>
         
         <nav className="header__nav" role="navigation" aria-label="Main navigation">
-          <Link to="/" className="header__nav-link">Documentation</Link>
-          <Link to="/components" className="header__nav-link">Components</Link>
+          <Link to="/" className="header__nav-link">Docs</Link>
+          <Link to="/components/button" className="header__nav-link">Components</Link>
           <a 
-            href="https://github.com/yourusername/component-library" 
-            className="header__nav-link"
+            href="https://github.com/primitivekit/react" 
+            className="header__github"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="View on GitHub (opens in new tab)"
+            aria-label="View on GitHub"
           >
-            GitHub
+            <Github size={18} />
           </a>
+          <ThemeToggle />
         </nav>
       </div>
     </header>
