@@ -1,5 +1,6 @@
 baseURL = 'https://primitivekit.com/'
 title = 'PrimitiveKit'
+publishDir = 'build'
 
 [module]
 [[module.imports]]
