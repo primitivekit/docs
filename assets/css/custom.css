@@ -33,6 +33,26 @@
   background-color: #000000 !important;
 }
 
+/* Navigation container */
+:root[class~="dark"] .hextra-nav-container {
+  background-color: #000000 !important;
+}
+
+/* Scrollbar container (sticky right sidebar) */
+:root[class~="dark"] .hextra-scrollbar {
+  background-color: #000000 !important;
+}
+
+/* Any container divs */
+:root[class~="dark"] .hextra-container {
+  background-color: #000000 !important;
+}
+
+/* Content wrapper */
+:root[class~="dark"] [class*="hextra"] {
+  background-color: transparent;
+}
+
 /* ============================================
  * FOOTER STYLING - Beautiful & Native
  * ============================================ */
