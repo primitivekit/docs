@@ -2,66 +2,7 @@
 
 # React Components
 
-PrimitiveKit provides 38 production-ready React components with complete TypeScript support, accessibility features, and extensive customization options.
-
-## Component Categories
-
-### Form Components (10)
-Interactive form elements for user input:
-- [Button](/docs/react/button) - Clickable button with multiple variants
-- [Input](/docs/react/input) - Text input with validation states
-- [Select](/docs/react/select) - Dropdown selection component
-- [Checkbox](/docs/react/checkbox) - Checkbox input with labels
-- [Radio](/docs/react/radio) - Radio button groups
-- [Switch](/docs/react/switch) - Toggle switch component
-- [Textarea](/docs/react/textarea) - Multi-line text input
-- [Slider](/docs/react/slider) - Range slider input
-- [Form](/docs/react/form) - Form wrapper with validation
-- [Upload](/docs/react/upload) - File upload component
-
-### Layout Components (6)
-Structural components for page layout:
-- [Card](/docs/react/card) - Content container with variants
-- [Container](/docs/react/container) - Responsive container
-- [Grid](/docs/react/grid) - Flexible grid system
-- [Stack](/docs/react/stack) - Vertical/horizontal stacking
-- [Space](/docs/react/space) - Spacing between elements
-- [Divider](/docs/react/divider) - Visual separator
-
-### Feedback Components (5)
-Components for user feedback and status:
-- [Alert](/docs/react/alert) - Alert messages with variants
-- [Badge](/docs/react/badge) - Status badges and labels
-- [Spinner](/docs/react/spinner) - Loading spinner
-- [Progress](/docs/react/progress) - Progress bar
-- [Skeleton](/docs/react/skeleton) - Loading placeholder
-
-### Navigation Components (6)
-Components for navigation and wayfinding:
-- [Link](/docs/react/link) - Styled link component
-- [Breadcrumb](/docs/react/breadcrumb) - Breadcrumb navigation
-- [Tabs](/docs/react/tabs) - Tab navigation
-- [Menu](/docs/react/menu) - Navigation menu
-- [Steps](/docs/react/steps) - Step indicator
-- [Pagination](/docs/react/pagination) - Page navigation
-
-### Overlay Components (5)
-Modal and overlay components:
-- [Modal](/docs/react/modal) - Modal dialog
-- [Drawer](/docs/react/drawer) - Slide-out drawer
-- [Tooltip](/docs/react/tooltip) - Hover tooltip
-- [Popover](/docs/react/popover) - Popover content
-- [Dropdown](/docs/react/dropdown) - Dropdown menu
-
-### Data Display Components (7)
-Components for displaying data:
-- [Avatar](/docs/react/avatar) - User avatar
-- [Tag](/docs/react/tag) - Tag labels
-- [Table](/docs/react/table) - Data table
-- [Collapse](/docs/react/collapse) - Collapsible content
-- [Image](/docs/react/image) - Image with loading states
-- [Empty](/docs/react/empty) - Empty state placeholder
-- [Typography](/docs/react/typography) - Text components
+PrimitiveKit for React provides 38 production-ready components with complete TypeScript support and zero hardcoded values.
 
 ## Installation
 
@@ -69,21 +10,19 @@ Components for displaying data:
 npm install @primitivekit/react
 ```
 
-## Basic Usage
+## Quick Start
 
 ```tsx
-import { Button, Input, Card } from '@primitivekit/react';
+import { Button, Card, Badge } from '@primitivekit/react';
+import '@primitivekit/react/tokens/tokens.css';
 
 function App() {
   return (
-    <Card>
-      <Input 
-        label="Email" 
-        placeholder="Enter your email"
-        type="email"
-      />
-      <Button variant="primary" size="large">
-        Submit
+    <Card variant="elevated">
+      <h2>Welcome to PrimitiveKit</h2>
+      <Badge variant="solid" color="primary">New</Badge>
+      <Button onClick={() => alert('Hello!')}>
+        Click Me
       </Button>
     </Card>
   );
@@ -92,53 +31,71 @@ function App() {
 
 ## Features
 
-### 🎨 Complete Customization
-Every component supports extensive CSS variable customization:
+- ✅ **38 Components** - Complete component library
+- ✅ **TypeScript** - Full type definitions included
+- ✅ **600+ Design Tokens** - Comprehensive customization
+- ✅ **Zero Hardcoded Values** - Everything customizable via CSS variables
+- ✅ **Accessible** - WCAG 2.1 AA compliant
+- ✅ **Tree Shakeable** - Import only what you need
 
-```tsx
-<Button
-  style={{
-    '--btn-bg-color': 'rgba(255, 0, 0, 1)',
-    '--btn-text-color': 'rgba(255, 255, 255, 1)',
-    '--btn-border-radius': '20px',
-  }}
->
-  Custom Button
-</Button>
-```
+## Component Categories
 
-### ♿ Accessibility First
-All components are WCAG 2.1 AA compliant with:
-- Proper ARIA attributes
-- Keyboard navigation
-- Screen reader support
-- Focus management
-- Touch target sizes (44x44px minimum)
+### Layout Components
+- [Card](/docs/react/card) - Flexible container with variants
+- [Container](/docs/react/container) - Responsive content wrapper
+- [Grid](/docs/react/grid) - Flexible grid system
+- [Stack](/docs/react/stack) - Vertical/horizontal stacking
+- [Space](/docs/react/space) - Spacing between elements
+- [Divider](/docs/react/divider) - Visual separator
 
-### 📘 TypeScript Support
-Full TypeScript definitions for all components:
+### Form Components
+- [Button](/docs/react/button) - Interactive button
+- [Input](/docs/react/input) - Text input field
+- [Select](/docs/react/select) - Dropdown selection
+- [Checkbox](/docs/react/checkbox) - Checkbox input
+- [Radio](/docs/react/radio) - Radio button
+- [Switch](/docs/react/switch) - Toggle switch
+- [Textarea](/docs/react/textarea) - Multi-line text input
+- [Slider](/docs/react/slider) - Range slider
+- [Form](/docs/react/form) - Form wrapper
+- [Upload](/docs/react/upload) - File upload
 
-```tsx
-import type { ButtonProps, InputProps } from '@primitivekit/react';
+### Feedback Components
+- [Alert](/docs/react/alert) - Alert messages
+- [Badge](/docs/react/badge) - Status indicators
+- [Spinner](/docs/react/spinner) - Loading spinner
+- [Progress](/docs/react/progress) - Progress bar
+- [Skeleton](/docs/react/skeleton) - Loading placeholder
 
-const MyButton: React.FC<ButtonProps> = (props) => {
-  return <Button {...props} />;
-};
-```
+### Navigation Components
+- [Link](/docs/react/link) - Navigation link
+- [Breadcrumb](/docs/react/breadcrumb) - Breadcrumb navigation
+- [Tabs](/docs/react/tabs) - Tab navigation
+- [Menu](/docs/react/menu) - Navigation menu
+- [Steps](/docs/react/steps) - Step indicator
+- [Pagination](/docs/react/pagination) - Page navigation
 
-### 🎯 Design Tokens
-Components use 600+ design tokens for consistent styling:
+### Overlay Components
+- [Modal](/docs/react/modal) - Modal dialog
+- [Drawer](/docs/react/drawer) - Side drawer
+- [Tooltip](/docs/react/tooltip) - Tooltip overlay
+- [Popover](/docs/react/popover) - Popover overlay
+- [Dropdown](/docs/react/dropdown) - Dropdown menu
 
-```tsx
-import '@primitivekit/react/tokens/tokens.css';
+### Data Display Components
+- [Avatar](/docs/react/avatar) - User avatar
+- [Tag](/docs/react/tag) - Tag label
+- [Table](/docs/react/table) - Data table
+- [Collapse](/docs/react/collapse) - Collapsible content
+- [Image](/docs/react/image) - Image component
+- [Empty](/docs/react/empty) - Empty state
+- [Typography](/docs/react/typography) - Text styling
 
-// Tokens are automatically applied to all components
-```
+## Version
 
-## Next Steps
+Current version: **0.2.1**
 
-- Browse individual component documentation
-- Learn about [Customization](/docs/customization)
-- Explore [Design Tokens](/docs/design-tokens)
-- Check [Accessibility](/docs/accessibility) guidelines
+## Repository
+
+[GitHub](https://github.com/primitivekit/react) • [NPM](https://www.npmjs.com/package/@primitivekit/react)
 
