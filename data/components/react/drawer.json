@@ -1,0 +1,188 @@
+{
+  "name": "Drawer",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "overlay",
+  "description": "",
+  "props": [
+    {
+      "name": "open",
+      "type": "boolean",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "title",
+      "type": "ReactNode",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "placement",
+      "type": "DrawerPlacement",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "size",
+      "type": "DrawerSize",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "width",
+      "type": "string | number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "height",
+      "type": "string | number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "footer",
+      "type": "ReactNode",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "closable",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "mask",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "maskClosable",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "keyboard",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "cssVariables",
+      "type": "Partial<DrawerCSSVariables>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onClose",
+      "type": "() => void",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "afterOpenChange",
+      "type": "(open: boolean) => void",
+      "required": false,
+      "description": ""
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Modal",
+    "Tooltip",
+    "Popover",
+    "Dropdown"
+  ],
+  "designTokens": [
+    "--drawer-mask-background",
+    "--drawer-mask-z-index",
+    "--drawer-mask-opacity",
+    "--drawer-mask-backdrop-filter",
+    "--drawer-transition-duration",
+    "--drawer-transition-timing",
+    "--open",
+    "--drawer-z-index",
+    "--drawer-background",
+    "--drawer-box-shadow",
+    "--drawer-header-padding",
+    "--drawer-header-background",
+    "--drawer-header-border-bottom-width",
+    "--drawer-header-border-bottom-style",
+    "--drawer-header-border-bottom-color",
+    "--drawer-title-font-size",
+    "--drawer-title-font-weight",
+    "--drawer-title-line-height",
+    "--drawer-title-color",
+    "--drawer-close-size",
+    "--drawer-close-color",
+    "--drawer-close-border-radius",
+    "--drawer-close-hover-color",
+    "--drawer-close-hover-background",
+    "--drawer-body-padding",
+    "--drawer-body-color",
+    "--drawer-body-font-size",
+    "--drawer-body-line-height",
+    "--drawer-body-overflow",
+    "--drawer-footer-padding",
+    "--drawer-footer-background",
+    "--drawer-footer-border-top-width",
+    "--drawer-footer-border-top-style",
+    "--drawer-footer-border-top-color",
+    "--drawer-footer-text-align",
+    "--top",
+    "--drawer-top-top",
+    "--drawer-top-left",
+    "--drawer-top-right",
+    "--drawer-top-transform-closed",
+    "--drawer-top-transform-open",
+    "--right",
+    "--drawer-right-top",
+    "--drawer-right-right",
+    "--drawer-right-bottom",
+    "--drawer-right-transform-closed",
+    "--drawer-right-transform-open",
+    "--bottom",
+    "--drawer-bottom-bottom",
+    "--drawer-bottom-left",
+    "--drawer-bottom-right",
+    "--drawer-bottom-transform-closed",
+    "--drawer-bottom-transform-open",
+    "--left",
+    "--drawer-left-top",
+    "--drawer-left-left",
+    "--drawer-left-bottom",
+    "--drawer-left-transform-closed",
+    "--drawer-left-transform-open",
+    "--small",
+    "--drawer-small-width",
+    "--drawer-small-height",
+    "--medium",
+    "--drawer-medium-width",
+    "--drawer-medium-height",
+    "--large",
+    "--drawer-large-width",
+    "--drawer-large-height"
+  ]
+}

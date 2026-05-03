@@ -1,0 +1,400 @@
+<!-- Framework Switcher Mega Menu Styles -->
+<style>
+  /* ============================================
+   * FRAMEWORK MEGA MENU - FLOATING BUTTON
+   * ============================================ */
+  
+  .framework-mega-menu-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9999;
+  }
+  
+  @media (max-width: 768px) {
+    .framework-mega-menu-container {
+      bottom: 1rem;
+      right: 1rem;
+    }
+  }
+  
+  .framework-mega-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .framework-trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: #0ea5e9;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  :root[class~="dark"] .framework-trigger {
+    background: #38bdf8;
+    color: #000000;
+  }
+  
+  .framework-trigger:hover {
+    background: #0284c7;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  :root[class~="dark"] .framework-trigger:hover {
+    background: #7dd3fc;
+  }
+  
+  .framework-trigger svg {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  .framework-trigger .chevron {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .framework-mega-menu.open .framework-trigger .chevron {
+    transform: rotate(180deg);
+  }
+  
+  /* Mega Menu Dropdown */
+  .mega-menu-dropdown {
+    position: absolute;
+    bottom: calc(100% + 1rem);
+    right: 0;
+    width: 600px;
+    max-width: 90vw;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.75rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.2s ease;
+    z-index: 1000;
+    padding: 1.5rem;
+  }
+  
+  :root[class~="dark"] .mega-menu-dropdown {
+    background: #000000;
+    border-color: #262626;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.8), 0 10px 10px -5px rgba(0, 0, 0, 0.6);
+  }
+  
+  .framework-mega-menu.open .mega-menu-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .mega-menu-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  :root[class~="dark"] .mega-menu-header {
+    border-bottom-color: #262626;
+  }
+  
+  .mega-menu-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #171717;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  :root[class~="dark"] .mega-menu-header h3 {
+    color: #fafafa;
+  }
+  
+  .mega-menu-header p {
+    font-size: 0.875rem;
+    color: #737373;
+    margin: 0;
+  }
+  
+  /* Framework Grid */
+  .framework-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  @media (max-width: 640px) {
+    .framework-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .framework-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  :root[class~="dark"] .framework-card {
+    background: #0a0a0a;
+    border-color: #262626;
+  }
+  
+  .framework-card:hover {
+    background: #ffffff;
+    border-color: #0ea5e9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  :root[class~="dark"] .framework-card:hover {
+    background: #171717;
+    border-color: #38bdf8;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .framework-card.active {
+    background: #eff6ff;
+    border-color: #0ea5e9;
+  }
+  
+  :root[class~="dark"] .framework-card.active {
+    background: #0c1e2e;
+    border-color: #38bdf8;
+  }
+  
+  .framework-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+  }
+  
+  .framework-info {
+    flex: 1;
+  }
+  
+  .framework-name {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #171717;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  :root[class~="dark"] .framework-name {
+    color: #fafafa;
+  }
+  
+  .framework-desc {
+    font-size: 0.75rem;
+    color: #737373;
+    margin: 0;
+  }
+  
+  .framework-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.125rem 0.5rem;
+    background: #dcfce7;
+    color: #166534;
+    border-radius: 9999px;
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  :root[class~="dark"] .framework-status {
+    background: #14532d;
+    color: #86efac;
+  }
+  
+  .framework-status.coming-soon {
+    background: #fef3c7;
+    color: #92400e;
+  }
+  
+  :root[class~="dark"] .framework-status.coming-soon {
+    background: #451a03;
+    color: #fde047;
+  }
+  
+  .framework-status-dot {
+    width: 0.375rem;
+    height: 0.375rem;
+    background: currentColor;
+    border-radius: 9999px;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .mega-menu-dropdown {
+      width: calc(100vw - 2rem);
+      right: 0;
+    }
+  }
+</style>
+
+<!-- Framework Switcher HTML -->
+<div class="framework-mega-menu-container">
+  <div class="framework-mega-menu">
+    <button class="framework-trigger" aria-label="Select Framework">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+      <span>Frameworks</span>
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M6 9l6 6 6-6"/>
+      </svg>
+    </button>
+    
+    <div class="mega-menu-dropdown">
+      <div class="mega-menu-header">
+        <h3>Choose Your Framework</h3>
+        <p>Select a framework to view component documentation</p>
+      </div>
+      
+      <div class="framework-grid">
+        <!-- React -->
+        <a href="/docs/react" class="framework-card">
+          <img src="/images/frameworks/react.svg" alt="React" class="framework-icon" />
+          <div class="framework-info">
+            <h4 class="framework-name">React</h4>
+            <p class="framework-desc">38 components • v0.2.1</p>
+          </div>
+          <span class="framework-status">
+            <span class="framework-status-dot"></span>
+            Ready
+          </span>
+        </a>
+        
+        <!-- Vue -->
+        <a href="/docs/vue" class="framework-card">
+          <img src="/images/frameworks/vue.svg" alt="Vue" class="framework-icon" />
+          <div class="framework-info">
+            <h4 class="framework-name">Vue</h4>
+            <p class="framework-desc">39 components • v0.1.0</p>
+          </div>
+          <span class="framework-status">
+            <span class="framework-status-dot"></span>
+            Ready
+          </span>
+        </a>
+        
+        <!-- Angular -->
+        <a href="/docs/angular" class="framework-card">
+          <img src="/images/frameworks/angular.svg" alt="Angular" class="framework-icon" />
+          <div class="framework-info">
+            <h4 class="framework-name">Angular</h4>
+            <p class="framework-desc">39 components • v0.1.0</p>
+          </div>
+          <span class="framework-status">
+            <span class="framework-status-dot"></span>
+            Ready
+          </span>
+        </a>
+        
+        <!-- Svelte -->
+        <a href="/docs/svelte" class="framework-card">
+          <img src="/images/frameworks/svelte.svg" alt="Svelte" class="framework-icon" />
+          <div class="framework-info">
+            <h4 class="framework-name">Svelte</h4>
+            <p class="framework-desc">39 components • v0.1.0</p>
+          </div>
+          <span class="framework-status">
+            <span class="framework-status-dot"></span>
+            Ready
+          </span>
+        </a>
+        
+        <!-- Astro -->
+        <a href="/docs/astro" class="framework-card">
+          <img src="/images/frameworks/astro.svg" alt="Astro" class="framework-icon" />
+          <div class="framework-info">
+            <h4 class="framework-name">Astro</h4>
+            <p class="framework-desc">39 components • v0.1.0</p>
+          </div>
+          <span class="framework-status">
+            <span class="framework-status-dot"></span>
+            Ready
+          </span>
+        </a>
+        
+        <!-- Vanilla JS -->
+        <a href="/docs/vanilla" class="framework-card">
+          <img src="/images/frameworks/vanilla.svg" alt="Vanilla JS" class="framework-icon" />
+          <div class="framework-info">
+            <h4 class="framework-name">Vanilla JS</h4>
+            <p class="framework-desc">39 components • v0.1.0</p>
+          </div>
+          <span class="framework-status">
+            <span class="framework-status-dot"></span>
+            Ready
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Framework Switcher Script -->
+<script>
+  (function() {
+    'use strict';
+    
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initFrameworkSwitcher);
+    } else {
+      initFrameworkSwitcher();
+    }
+    
+    function initFrameworkSwitcher() {
+      const megaMenu = document.querySelector('.framework-mega-menu');
+      const trigger = document.querySelector('.framework-trigger');
+      
+      if (!megaMenu || !trigger) {
+        return;
+      }
+      
+      // Toggle menu on button click
+      trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        megaMenu.classList.toggle('open');
+      });
+      
+      // Close on outside click
+      document.addEventListener('click', function(e) {
+        if (megaMenu && !megaMenu.contains(e.target)) {
+          megaMenu.classList.remove('open');
+        }
+      });
+      
+      // Close on escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && megaMenu) {
+          megaMenu.classList.remove('open');
+        }
+      });
+    }
+  })();
+</script>

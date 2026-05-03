@@ -1,0 +1,327 @@
+{
+  "name": "Input",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "form",
+  "description": "",
+  "props": [
+    {
+      "name": "size",
+      "type": "InputSize",
+      "required": false,
+      "default": "'medium'",
+      "description": "Input size"
+    },
+    {
+      "name": "variant",
+      "type": "InputVariant",
+      "required": false,
+      "default": "'default'",
+      "description": "Visual style variant"
+    },
+    {
+      "name": "state",
+      "type": "InputState",
+      "required": false,
+      "default": "'default'",
+      "description": "Input state for validation feedback"
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": false,
+      "description": "Label text"
+    },
+    {
+      "name": "helperText",
+      "type": "string",
+      "required": false,
+      "description": "Helper text displayed below input"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "required": false,
+      "description": "Error message (sets state to 'error')"
+    },
+    {
+      "name": "success",
+      "type": "string",
+      "required": false,
+      "description": "Success message (sets state to 'success')"
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "required": false,
+      "description": "Warning message (sets state to 'warning')"
+    },
+    {
+      "name": "fullWidth",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Make input full width"
+    },
+    {
+      "name": "leftElement",
+      "type": "ReactNode",
+      "required": false,
+      "description": "Icon or element to display on the left"
+    },
+    {
+      "name": "rightElement",
+      "type": "ReactNode",
+      "required": false,
+      "description": "Icon or element to display on the right"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "style",
+      "type": "InputCSSVariables",
+      "required": false,
+      "description": "Inline styles with CSS variable support"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "required": false,
+      "description": "ID for the input element"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": false,
+      "description": "Name attribute"
+    },
+    {
+      "name": "type",
+      "type": "'text' | 'email' | 'password' | 'number' | 'tel' | 'url' | 'search' | 'date' | 'time' | 'datetime-local' | 'month' | 'week'",
+      "required": false,
+      "default": "'text'",
+      "description": "Input type"
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "required": false,
+      "description": "Placeholder text"
+    },
+    {
+      "name": "value",
+      "type": "string | number",
+      "required": false,
+      "description": "Input value (controlled)"
+    },
+    {
+      "name": "defaultValue",
+      "type": "string | number",
+      "required": false,
+      "description": "Default value (uncontrolled)"
+    },
+    {
+      "name": "onChange",
+      "type": "(event: React.ChangeEvent<HTMLInputElement>) => void",
+      "required": false,
+      "description": "Change handler"
+    },
+    {
+      "name": "onFocus",
+      "type": "(event: React.FocusEvent<HTMLInputElement>) => void",
+      "required": false,
+      "description": "Focus handler"
+    },
+    {
+      "name": "onBlur",
+      "type": "(event: React.FocusEvent<HTMLInputElement>) => void",
+      "required": false,
+      "description": "Blur handler"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Disable the input"
+    },
+    {
+      "name": "readOnly",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Make input read-only"
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Require input"
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": false,
+      "description": "Accessible label (if label prop not used)"
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "required": false,
+      "description": "ID of element that describes the input"
+    },
+    {
+      "name": "ariaInvalid",
+      "type": "boolean",
+      "required": false,
+      "description": "Indicates invalid input"
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Button",
+    "Select",
+    "Checkbox",
+    "Radio",
+    "Switch"
+  ],
+  "designTokens": [
+    "--input-wrapper-display",
+    "--input-wrapper-width",
+    "--full-width",
+    "--input-padding-top",
+    "--input-padding-y",
+    "--input-padding-right",
+    "--input-padding-x",
+    "--input-padding-bottom",
+    "--input-padding-left",
+    "--input-margin-top",
+    "--input-margin-y",
+    "--input-margin-right",
+    "--input-margin-x",
+    "--input-margin-bottom",
+    "--input-margin-left",
+    "--input-border-top-width",
+    "--input-border-width",
+    "--input-border-right-width",
+    "--input-border-bottom-width",
+    "--input-border-left-width",
+    "--input-border-top-style",
+    "--input-border-style",
+    "--input-border-right-style",
+    "--input-border-bottom-style",
+    "--input-border-left-style",
+    "--input-border-top-color",
+    "--input-border-color",
+    "--input-border-right-color",
+    "--input-border-bottom-color",
+    "--input-border-left-color",
+    "--input-border-top-left-radius",
+    "--input-border-radius",
+    "--input-border-top-right-radius",
+    "--input-border-bottom-right-radius",
+    "--input-border-bottom-left-radius",
+    "--input-width",
+    "--input-min-width",
+    "--input-max-width",
+    "--input-height",
+    "--input-min-height",
+    "--input-max-height",
+    "--input-font-family",
+    "--input-font-size",
+    "--input-font-weight",
+    "--input-font-style",
+    "--input-line-height",
+    "--input-letter-spacing",
+    "--input-text-align",
+    "--input-text-decoration",
+    "--input-text-transform",
+    "--input-bg-color",
+    "--input-text-color",
+    "--input-placeholder-color",
+    "--input-placeholder-opacity",
+    "--input-bg-color-hover",
+    "--input-text-color-hover",
+    "--input-border-color-hover",
+    "--input-border-top-color-hover",
+    "--input-border-right-color-hover",
+    "--input-border-bottom-color-hover",
+    "--input-border-left-color-hover",
+    "--input-bg-color-focus",
+    "--input-text-color-focus",
+    "--input-border-color-focus",
+    "--input-outline-color",
+    "--input-outline-width",
+    "--input-outline-style",
+    "--input-outline-offset",
+    "--input-ring-color",
+    "--input-ring-width",
+    "--input-ring-offset",
+    "--input-bg-color-disabled",
+    "--input-text-color-disabled",
+    "--input-border-color-disabled",
+    "--input-opacity-disabled",
+    "--input-cursor-disabled",
+    "--input-bg-color-error",
+    "--input-text-color-error",
+    "--input-border-color-error",
+    "--input-border-color-error-focus",
+    "--input-bg-color-success",
+    "--input-text-color-success",
+    "--input-border-color-success",
+    "--input-border-color-success-focus",
+    "--input-bg-color-warning",
+    "--input-text-color-warning",
+    "--input-border-color-warning",
+    "--input-border-color-warning-focus",
+    "--input-box-shadow",
+    "--input-box-shadow-hover",
+    "--input-box-shadow-focus",
+    "--input-box-shadow-disabled",
+    "--input-transition-property",
+    "--input-transition-duration",
+    "--input-transition-timing",
+    "--input-transition-delay",
+    "--input-display",
+    "--input-position",
+    "--input-cursor",
+    "--input-overflow",
+    "--input-vertical-align",
+    "--input-icon-size",
+    "--input-icon-color",
+    "--input-icon-spacing",
+    "--input-left-element-width",
+    "--input-right-element-width",
+    "--disabled",
+    "--readonly",
+    "--small",
+    "--large",
+    "--filled",
+    "--flushed",
+    "--unstyled",
+    "--error",
+    "--success",
+    "--warning",
+    "--has-left",
+    "--has-right",
+    "--input-label-color",
+    "--input-label-font-size",
+    "--input-label-font-weight",
+    "--input-label-margin-bottom",
+    "--input-label-color-disabled",
+    "--input-label-color-error",
+    "--input-label-color-success",
+    "--input-label-color-warning",
+    "--input-helper-color",
+    "--input-helper-font-size",
+    "--input-helper-margin-top",
+    "--input-helper-color-error",
+    "--input-helper-color-success",
+    "--input-helper-color-warning"
+  ]
+}

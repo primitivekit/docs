@@ -1,0 +1,118 @@
+{
+  "name": "Typography",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "data-display",
+  "description": "",
+  "props": [
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true,
+      "description": "Content"
+    },
+    {
+      "name": "variant",
+      "type": "TypographyVariant",
+      "required": false,
+      "default": "'body1'",
+      "description": "Typography variant"
+    },
+    {
+      "name": "weight",
+      "type": "TypographyWeight",
+      "required": false,
+      "description": "Font weight"
+    },
+    {
+      "name": "align",
+      "type": "TypographyAlign",
+      "required": false,
+      "description": "Text alignment"
+    },
+    {
+      "name": "color",
+      "type": "string",
+      "required": false,
+      "description": "Text color"
+    },
+    {
+      "name": "ellipsis",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Truncate text with ellipsis"
+    },
+    {
+      "name": "lineClamp",
+      "type": "number",
+      "required": false,
+      "description": "Number of lines before truncating (requires ellipsis)"
+    },
+    {
+      "name": "component",
+      "type": "'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span' | 'div'",
+      "required": false,
+      "description": "Render as specific HTML element"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "style",
+      "type": "TypographyCSSVariables",
+      "required": false,
+      "description": "Inline styles with CSS variable support"
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Avatar",
+    "Tag",
+    "Table",
+    "Collapse",
+    "Image"
+  ],
+  "designTokens": [
+    "--typography-font-family",
+    "--typography-font-size",
+    "--typography-font-weight",
+    "--typography-line-height",
+    "--typography-letter-spacing",
+    "--typography-text-align",
+    "--typography-text-transform",
+    "--typography-text-decoration",
+    "--typography-color",
+    "--typography-margin-top",
+    "--typography-margin-right",
+    "--typography-margin-bottom",
+    "--typography-margin-left",
+    "--typography-text-shadow",
+    "--typography-opacity",
+    "--typography-line-clamp",
+    "--h1",
+    "--h2",
+    "--h3",
+    "--h4",
+    "--h5",
+    "--h6",
+    "--body1",
+    "--body2",
+    "--caption",
+    "--overline",
+    "--weight-light",
+    "--weight-regular",
+    "--weight-medium",
+    "--weight-semibold",
+    "--weight-bold",
+    "--align-left",
+    "--align-center",
+    "--align-right",
+    "--align-justify",
+    "--ellipsis",
+    "--line-clamp"
+  ]
+}

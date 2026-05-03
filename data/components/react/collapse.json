@@ -1,0 +1,129 @@
+{
+  "name": "Collapse",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "data-display",
+  "description": "",
+  "props": [
+    {
+      "name": "items",
+      "type": "CollapseItem[]",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "activeKey",
+      "type": "string | string[]",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "defaultActiveKey",
+      "type": "string | string[]",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "accordion",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "bordered",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "expandIconPosition",
+      "type": "'start' | 'end'",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "cssVariables",
+      "type": "Partial<CollapseCSSVariables>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onChange",
+      "type": "(key: string | string[]) => void",
+      "required": false,
+      "description": ""
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Avatar",
+    "Tag",
+    "Table",
+    "Image",
+    "Empty"
+  ],
+  "designTokens": [
+    "--collapse-background",
+    "--bordered",
+    "--collapse-border-width",
+    "--collapse-border-style",
+    "--collapse-border-color",
+    "--collapse-border-radius",
+    "--collapse-item-border-bottom-width",
+    "--collapse-item-border-bottom-style",
+    "--collapse-item-border-bottom-color",
+    "--collapse-item-margin-bottom",
+    "--collapse-header-padding",
+    "--collapse-header-background",
+    "--collapse-header-color",
+    "--collapse-header-font-size",
+    "--collapse-header-font-weight",
+    "--collapse-header-line-height",
+    "--collapse-header-cursor",
+    "--collapse-transition-duration",
+    "--collapse-transition-timing",
+    "--collapse-header-hover-background",
+    "--collapse-header-hover-color",
+    "--collapse-focus-outline-width",
+    "--collapse-focus-outline-style",
+    "--collapse-focus-outline-color",
+    "--collapse-focus-outline-offset",
+    "--active",
+    "--collapse-header-active-background",
+    "--collapse-header-active-color",
+    "--disabled",
+    "--collapse-header-disabled-background",
+    "--collapse-header-disabled-color",
+    "--collapse-header-disabled-cursor",
+    "--collapse-header-disabled-opacity",
+    "--collapse-icon-size",
+    "--collapse-icon-color",
+    "--collapse-icon-transition-duration",
+    "--collapse-icon-transition-timing",
+    "--collapse-icon-rotate",
+    "--collapse-icon-active-rotate",
+    "--icon-start",
+    "--collapse-icon-margin",
+    "--icon-end",
+    "--collapse-extra-margin-left",
+    "--collapse-extra-color",
+    "--collapse-extra-font-size",
+    "--collapse-content-padding",
+    "--collapse-content-background",
+    "--collapse-content-color",
+    "--collapse-content-font-size",
+    "--collapse-content-line-height"
+  ]
+}

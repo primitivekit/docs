@@ -1,0 +1,157 @@
+{
+  "name": "Image",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "data-display",
+  "description": "",
+  "props": [
+    {
+      "name": "src",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "alt",
+      "type": "string",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "width",
+      "type": "string | number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "height",
+      "type": "string | number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "fit",
+      "type": "ImageFit",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "placeholder",
+      "type": "ReactNode",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "fallback",
+      "type": "ReactNode",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "preview",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "previewSrc",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "loading",
+      "type": "'lazy' | 'eager'",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "cssVariables",
+      "type": "Partial<ImageCSSVariables>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onLoad",
+      "type": "() => void",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onError",
+      "type": "() => void",
+      "required": false,
+      "description": ""
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Avatar",
+    "Tag",
+    "Table",
+    "Collapse",
+    "Empty"
+  ],
+  "designTokens": [
+    "--image-display",
+    "--image-position",
+    "--image-overflow",
+    "--image-border-radius",
+    "--image-background",
+    "--image-transition-duration",
+    "--image-transition-timing",
+    "--image-width",
+    "--image-height",
+    "--image-object-fit",
+    "--image-object-position",
+    "--image-opacity",
+    "--image-filter",
+    "--image-placeholder-background",
+    "--image-placeholder-color",
+    "--image-placeholder-display",
+    "--image-placeholder-align-items",
+    "--image-placeholder-justify-content",
+    "--image-fallback-background",
+    "--image-fallback-color",
+    "--image-fallback-font-size",
+    "--image-fallback-display",
+    "--image-fallback-align-items",
+    "--image-fallback-justify-content",
+    "--preview",
+    "--image-hover-opacity",
+    "--image-hover-transform",
+    "--image-preview-overlay-background",
+    "--image-preview-overlay-opacity",
+    "--image-preview-overlay-backdrop-filter",
+    "--image-preview-icon-color",
+    "--image-preview-icon-size",
+    "--image-preview-icon-opacity",
+    "--image-preview-modal-background",
+    "--image-preview-modal-z-index",
+    "--image-preview-modal-padding",
+    "--image-animation-duration",
+    "--image-animation-timing",
+    "--image-preview-image-max-width",
+    "--image-preview-image-max-height",
+    "--image-preview-close-top",
+    "--image-preview-close-right",
+    "--image-preview-close-color",
+    "--image-preview-close-size",
+    "--image-preview-close-hover-color",
+    "--loading",
+    "--image-loading-opacity",
+    "--image-loading-filter"
+  ]
+}

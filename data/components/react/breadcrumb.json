@@ -1,0 +1,126 @@
+{
+  "name": "Breadcrumb",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "navigation",
+  "description": "",
+  "props": [
+    {
+      "name": "items",
+      "type": "BreadcrumbItem[]",
+      "required": true,
+      "description": "Array of breadcrumb items"
+    },
+    {
+      "name": "separator",
+      "type": "BreadcrumbSeparator",
+      "required": false,
+      "default": "'chevron'",
+      "description": "Separator style"
+    },
+    {
+      "name": "customSeparator",
+      "type": "ReactNode",
+      "required": false,
+      "description": "Custom separator element (when separator is 'custom')"
+    },
+    {
+      "name": "size",
+      "type": "BreadcrumbSize",
+      "required": false,
+      "default": "'medium'",
+      "description": "Breadcrumb size"
+    },
+    {
+      "name": "maxItems",
+      "type": "number",
+      "required": false,
+      "description": "Maximum items to show before collapsing"
+    },
+    {
+      "name": "showHomeIcon",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Show home icon for first item"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "style",
+      "type": "BreadcrumbCSSVariables",
+      "required": false,
+      "description": "Inline styles with CSS variable support"
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": false,
+      "description": "Accessible label"
+    },
+    {
+      "name": "onItemClick",
+      "type": "(item: BreadcrumbItem) => void",
+      "required": false,
+      "description": "Click handler for breadcrumb items"
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Link",
+    "Tabs",
+    "Menu",
+    "Steps",
+    "Pagination"
+  ],
+  "designTokens": [
+    "--breadcrumb-bg-color",
+    "--breadcrumb-padding-top",
+    "--breadcrumb-padding-y",
+    "--breadcrumb-padding-right",
+    "--breadcrumb-padding-x",
+    "--breadcrumb-padding-bottom",
+    "--breadcrumb-padding-left",
+    "--breadcrumb-gap",
+    "--breadcrumb-item-color",
+    "--breadcrumb-item-color-hover",
+    "--breadcrumb-item-color-active",
+    "--breadcrumb-item-color-disabled",
+    "--breadcrumb-item-bg-color",
+    "--breadcrumb-item-bg-color-hover",
+    "--breadcrumb-item-font-size",
+    "--breadcrumb-item-font-weight",
+    "--breadcrumb-item-font-weight-active",
+    "--breadcrumb-item-line-height",
+    "--breadcrumb-item-padding-top",
+    "--breadcrumb-item-padding-y",
+    "--breadcrumb-item-padding-right",
+    "--breadcrumb-item-padding-x",
+    "--breadcrumb-item-padding-bottom",
+    "--breadcrumb-item-padding-left",
+    "--breadcrumb-item-border-radius",
+    "--breadcrumb-item-text-decoration",
+    "--breadcrumb-item-text-decoration-hover",
+    "--breadcrumb-separator-color",
+    "--breadcrumb-separator-size",
+    "--breadcrumb-separator-margin",
+    "--breadcrumb-icon-size",
+    "--breadcrumb-icon-margin",
+    "--breadcrumb-opacity-disabled",
+    "--breadcrumb-outline-color",
+    "--breadcrumb-outline-width",
+    "--breadcrumb-outline-offset",
+    "--breadcrumb-transition-duration",
+    "--breadcrumb-transition-timing",
+    "--current",
+    "--disabled",
+    "--small",
+    "--large",
+    "--separator-slash",
+    "--separator-dot"
+  ]
+}

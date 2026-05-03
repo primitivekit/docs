@@ -1,0 +1,31 @@
+{
+  "name": "Card",
+  "framework": "vanilla",
+  "frameworkName": "Vanilla JS",
+  "category": "layout",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Container",
+    "Grid",
+    "Stack",
+    "Space",
+    "Divider"
+  ],
+  "designTokens": [
+    "--card-bg-color",
+    "--card-border-width",
+    "--card-border-color",
+    "--card-border-radius",
+    "--card-padding",
+    "--card-box-shadow",
+    "--card-box-shadow-hover",
+    "--card-transition-duration",
+    "--elevated",
+    "--outlined",
+    "--filled",
+    "--hoverable",
+    "--clickable"
+  ]
+}

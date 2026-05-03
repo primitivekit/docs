@@ -1,0 +1,35 @@
+{
+  "name": "Radio",
+  "framework": "vanilla",
+  "frameworkName": "Vanilla JS",
+  "category": "form",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Button",
+    "Input",
+    "Select",
+    "Checkbox",
+    "Switch"
+  ],
+  "designTokens": [
+    "--radio-size",
+    "--radio-border-width",
+    "--radio-border-color",
+    "--radio-border-color-hover",
+    "--radio-border-color-checked",
+    "--radio-bg-color",
+    "--radio-bg-color-checked",
+    "--radio-dot-color",
+    "--radio-dot-size",
+    "--radio-label-gap",
+    "--radio-label-color",
+    "--radio-label-font-size",
+    "--radio-ring-color",
+    "--small",
+    "--large",
+    "--error",
+    "--disabled"
+  ]
+}

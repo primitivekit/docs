@@ -1,0 +1,24 @@
+{
+  "name": "Grid",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "layout",
+  "description": "",
+  "props": [],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Card",
+    "Container",
+    "Stack",
+    "Space",
+    "Divider"
+  ],
+  "designTokens": [
+    "--grid-columns",
+    "--grid-gap",
+    "--grid-row-gap",
+    "--grid-column-gap",
+    "--grid-auto-rows",
+    "--grid-auto-columns"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Checkbox",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "form",
+  "description": "",
+  "props": [],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Button",
+    "Input",
+    "Select",
+    "Radio",
+    "Switch"
+  ],
+  "designTokens": [
+    "--checkbox-size",
+    "--checkbox-border-width",
+    "--checkbox-border-color",
+    "--checkbox-border-radius",
+    "--checkbox-border-color-hover",
+    "--checkbox-border-color-checked",
+    "--checkbox-bg-color",
+    "--checkbox-bg-color-checked",
+    "--checkbox-checkmark-color",
+    "--checkbox-label-gap",
+    "--checkbox-label-color",
+    "--checkbox-label-font-size",
+    "--checkbox-ring-color",
+    "--checkbox-ring-width",
+    "--small",
+    "--large",
+    "--error",
+    "--disabled"
+  ]
+}

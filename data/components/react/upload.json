@@ -1,0 +1,157 @@
+{
+  "name": "Upload",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "form",
+  "description": "",
+  "props": [
+    {
+      "name": "accept",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "multiple",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "maxCount",
+      "type": "number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "maxSize",
+      "type": "number",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "fileList",
+      "type": "UploadFile[]",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "defaultFileList",
+      "type": "UploadFile[]",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "listType",
+      "type": "UploadListType",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "showUploadList",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "cssVariables",
+      "type": "Partial<UploadCSSVariables>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "beforeUpload",
+      "type": "(file: File) => boolean | Promise<boolean>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "customRequest",
+      "type": "(options: {\n    file: File",
+      "required": false,
+      "description": ""
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Button",
+    "Input",
+    "Select",
+    "Checkbox",
+    "Radio"
+  ],
+  "designTokens": [
+    "--upload-border-width",
+    "--upload-border-style",
+    "--upload-border-color",
+    "--upload-border-radius",
+    "--upload-background",
+    "--upload-padding",
+    "--upload-min-height",
+    "--upload-cursor",
+    "--upload-transition-duration",
+    "--upload-transition-timing",
+    "--upload-hover-border-color",
+    "--upload-hover-background",
+    "--disabled",
+    "--upload-disabled-background",
+    "--upload-disabled-border-color",
+    "--upload-disabled-cursor",
+    "--upload-disabled-opacity",
+    "--drag-over",
+    "--upload-drag-border-color",
+    "--upload-drag-background",
+    "--upload-list-gap",
+    "--upload-list-item-padding",
+    "--upload-list-item-background",
+    "--upload-list-item-border-width",
+    "--upload-list-item-border-style",
+    "--upload-list-item-border-color",
+    "--upload-list-item-border-radius",
+    "--upload-list-item-hover-background",
+    "--upload-list-icon-size",
+    "--upload-list-icon-color",
+    "--uploading",
+    "--upload-status-uploading-color",
+    "--done",
+    "--upload-status-done-color",
+    "--error",
+    "--upload-status-error-color",
+    "--upload-list-name-flex",
+    "--upload-list-name-font-size",
+    "--upload-list-name-color",
+    "--upload-list-action-size",
+    "--upload-list-action-color",
+    "--upload-list-action-hover-color",
+    "--upload-progress-height",
+    "--upload-progress-background",
+    "--upload-progress-border-radius",
+    "--upload-progress-bar-background",
+    "--picture-card",
+    "--upload-picture-card-size"
+  ]
+}

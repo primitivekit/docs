@@ -1,0 +1,24 @@
+{
+  "name": "Progress",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "feedback",
+  "description": "",
+  "props": [],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Alert",
+    "Badge",
+    "Spinner",
+    "Skeleton"
+  ],
+  "designTokens": [
+    "--progress-height",
+    "--progress-bg-color",
+    "--progress-fill-color",
+    "--progress-border-radius",
+    "--small",
+    "--large",
+    "--indeterminate"
+  ]
+}

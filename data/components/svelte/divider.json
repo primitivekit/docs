@@ -1,0 +1,28 @@
+{
+  "name": "Divider",
+  "framework": "svelte",
+  "frameworkName": "Svelte",
+  "category": "layout",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Card",
+    "Container",
+    "Grid",
+    "Stack",
+    "Space"
+  ],
+  "designTokens": [
+    "--divider-color",
+    "--divider-width",
+    "--divider-style",
+    "--divider-margin-y",
+    "--divider-margin-x",
+    "--horizontal",
+    "--vertical",
+    "--dashed",
+    "--dotted",
+    "--with-label"
+  ]
+}

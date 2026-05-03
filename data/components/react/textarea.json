@@ -1,0 +1,255 @@
+{
+  "name": "Textarea",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "form",
+  "description": "",
+  "props": [
+    {
+      "name": "size",
+      "type": "TextareaSize",
+      "required": false,
+      "default": "'medium'",
+      "description": "Textarea size"
+    },
+    {
+      "name": "variant",
+      "type": "TextareaVariant",
+      "required": false,
+      "default": "'default'",
+      "description": "Visual style variant"
+    },
+    {
+      "name": "state",
+      "type": "TextareaState",
+      "required": false,
+      "default": "'default'",
+      "description": "Textarea state for validation feedback"
+    },
+    {
+      "name": "resize",
+      "type": "TextareaResize",
+      "required": false,
+      "default": "'vertical'",
+      "description": "Resize behavior"
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "required": false,
+      "description": "Label text"
+    },
+    {
+      "name": "helperText",
+      "type": "string",
+      "required": false,
+      "description": "Helper text displayed below textarea"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "required": false,
+      "description": "Error message (sets state to 'error')"
+    },
+    {
+      "name": "success",
+      "type": "string",
+      "required": false,
+      "description": "Success message (sets state to 'success')"
+    },
+    {
+      "name": "warning",
+      "type": "string",
+      "required": false,
+      "description": "Warning message (sets state to 'warning')"
+    },
+    {
+      "name": "fullWidth",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Make textarea full width"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "style",
+      "type": "TextareaCSSVariables",
+      "required": false,
+      "description": "Inline styles with CSS variable support"
+    },
+    {
+      "name": "id",
+      "type": "string",
+      "required": false,
+      "description": "ID for the textarea element"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": false,
+      "description": "Name attribute"
+    },
+    {
+      "name": "placeholder",
+      "type": "string",
+      "required": false,
+      "description": "Placeholder text"
+    },
+    {
+      "name": "value",
+      "type": "string",
+      "required": false,
+      "description": "Textarea value (controlled)"
+    },
+    {
+      "name": "defaultValue",
+      "type": "string",
+      "required": false,
+      "description": "Default value (uncontrolled)"
+    },
+    {
+      "name": "rows",
+      "type": "number",
+      "required": false,
+      "description": "Number of visible text rows"
+    },
+    {
+      "name": "onChange",
+      "type": "(event: React.ChangeEvent<HTMLTextAreaElement>) => void",
+      "required": false,
+      "description": "Change handler"
+    },
+    {
+      "name": "onFocus",
+      "type": "(event: React.FocusEvent<HTMLTextAreaElement>) => void",
+      "required": false,
+      "description": "Focus handler"
+    },
+    {
+      "name": "onBlur",
+      "type": "(event: React.FocusEvent<HTMLTextAreaElement>) => void",
+      "required": false,
+      "description": "Blur handler"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Disable the textarea"
+    },
+    {
+      "name": "readOnly",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Make textarea read-only"
+    },
+    {
+      "name": "required",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Require textarea"
+    },
+    {
+      "name": "maxLength",
+      "type": "number",
+      "required": false,
+      "description": "Maximum length"
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": false,
+      "description": "Accessible label (if label prop not used)"
+    },
+    {
+      "name": "ariaDescribedBy",
+      "type": "string",
+      "required": false,
+      "description": "ID of element that describes the textarea"
+    },
+    {
+      "name": "ariaInvalid",
+      "type": "boolean",
+      "required": false,
+      "description": "Indicates invalid textarea"
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Button",
+    "Input",
+    "Select",
+    "Checkbox",
+    "Radio"
+  ],
+  "designTokens": [
+    "--textarea-wrapper-display",
+    "--textarea-wrapper-width",
+    "--full-width",
+    "--textarea-padding-top",
+    "--textarea-padding-y",
+    "--textarea-padding-right",
+    "--textarea-padding-x",
+    "--textarea-padding-bottom",
+    "--textarea-padding-left",
+    "--textarea-border-width",
+    "--textarea-border-style",
+    "--textarea-border-color",
+    "--textarea-border-radius",
+    "--textarea-border-color-hover",
+    "--textarea-border-color-focus",
+    "--textarea-width",
+    "--textarea-min-width",
+    "--textarea-max-width",
+    "--textarea-height",
+    "--textarea-min-height",
+    "--textarea-max-height",
+    "--textarea-font-family",
+    "--textarea-font-size",
+    "--textarea-font-weight",
+    "--textarea-line-height",
+    "--textarea-bg-color",
+    "--textarea-text-color",
+    "--textarea-placeholder-color",
+    "--textarea-bg-color-hover",
+    "--textarea-bg-color-focus",
+    "--textarea-bg-color-disabled",
+    "--textarea-text-color-disabled",
+    "--textarea-border-color-disabled",
+    "--textarea-border-color-error",
+    "--textarea-border-color-success",
+    "--textarea-border-color-warning",
+    "--textarea-box-shadow",
+    "--textarea-box-shadow-focus",
+    "--textarea-ring-color",
+    "--textarea-ring-width",
+    "--textarea-resize",
+    "--disabled",
+    "--small",
+    "--large",
+    "--filled",
+    "--unstyled",
+    "--error",
+    "--success",
+    "--warning",
+    "--resize-none",
+    "--resize-vertical",
+    "--resize-horizontal",
+    "--resize-both",
+    "--textarea-label-color",
+    "--textarea-label-font-size",
+    "--textarea-label-font-weight",
+    "--textarea-label-margin-bottom",
+    "--textarea-helper-color",
+    "--textarea-helper-font-size",
+    "--textarea-helper-margin-top"
+  ]
+}

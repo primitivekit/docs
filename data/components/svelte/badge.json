@@ -1,0 +1,37 @@
+{
+  "name": "Badge",
+  "framework": "svelte",
+  "frameworkName": "Svelte",
+  "category": "feedback",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Alert",
+    "Spinner",
+    "Progress",
+    "Skeleton"
+  ],
+  "designTokens": [
+    "--badge-padding-x",
+    "--badge-padding-y",
+    "--badge-font-size",
+    "--badge-font-weight",
+    "--badge-border-radius",
+    "--badge-border-width",
+    "--small",
+    "--large",
+    "--solid",
+    "--primary",
+    "--badge-bg-color",
+    "--badge-text-color",
+    "--subtle",
+    "--outline",
+    "--badge-border-color",
+    "--secondary",
+    "--success",
+    "--warning",
+    "--danger",
+    "--info"
+  ]
+}

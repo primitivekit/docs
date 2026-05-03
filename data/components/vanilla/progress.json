@@ -1,0 +1,24 @@
+{
+  "name": "Progress",
+  "framework": "vanilla",
+  "frameworkName": "Vanilla JS",
+  "category": "feedback",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Alert",
+    "Badge",
+    "Spinner",
+    "Skeleton"
+  ],
+  "designTokens": [
+    "--progress-height",
+    "--progress-bg-color",
+    "--progress-fill-color",
+    "--progress-border-radius",
+    "--small",
+    "--large",
+    "--indeterminate"
+  ]
+}

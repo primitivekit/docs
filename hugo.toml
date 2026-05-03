@@ -11,6 +11,10 @@ enableGitInfo = true
 enableEmoji = false
 hasCJKLanguage = false
 
+# Custom layouts
+[params.customHead]
+enable = true
+
 # Output formats for markdown and llms.txt
 [outputs]
 home = ["html", "rss", "llms"]
@@ -94,28 +98,46 @@ name = "Frameworks"
 weight = 2
 
 [[menu.sidebar]]
-name = "React"
-pageRef = "/docs/react"
+name = "Framework Comparison"
+pageRef = "/docs/framework-comparison"
 parent = "Frameworks"
 weight = 1
 
 [[menu.sidebar]]
-name = "Vue (Coming Soon)"
-pageRef = "/docs/vue"
+name = "React"
+pageRef = "/docs/react"
 parent = "Frameworks"
 weight = 2
 
 [[menu.sidebar]]
-name = "Angular (Coming Soon)"
-pageRef = "/docs/angular"
+name = "Vue"
+pageRef = "/docs/vue"
 parent = "Frameworks"
 weight = 3
 
 [[menu.sidebar]]
-name = "Astro (Coming Soon)"
-pageRef = "/docs/astro"
+name = "Angular"
+pageRef = "/docs/angular"
 parent = "Frameworks"
 weight = 4
+
+[[menu.sidebar]]
+name = "Svelte"
+pageRef = "/docs/svelte"
+parent = "Frameworks"
+weight = 5
+
+[[menu.sidebar]]
+name = "Astro"
+pageRef = "/docs/astro"
+parent = "Frameworks"
+weight = 6
+
+[[menu.sidebar]]
+name = "Vanilla JS"
+pageRef = "/docs/vanilla"
+parent = "Frameworks"
+weight = 7
 
 [[menu.sidebar]]
 name = "Guides"
@@ -149,274 +171,1608 @@ weight = 4
 name = "React Components"
 weight = 4
 
-# Form Components
 [[menu.sidebar]]
-name = "Form Components"
+name = "Form Components (10)"
 parent = "React Components"
 weight = 1
 
 [[menu.sidebar]]
 name = "Button"
 pageRef = "/docs/react/button"
-parent = "Form Components"
+parent = "Form Components (10)"
 weight = 1
-
-[[menu.sidebar]]
-name = "Input"
-pageRef = "/docs/react/input"
-parent = "Form Components"
-weight = 2
-
-[[menu.sidebar]]
-name = "Select"
-pageRef = "/docs/react/select"
-parent = "Form Components"
-weight = 3
 
 [[menu.sidebar]]
 name = "Checkbox"
 pageRef = "/docs/react/checkbox"
-parent = "Form Components"
+parent = "Form Components (10)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Form"
+pageRef = "/docs/react/form"
+parent = "Form Components (10)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Input"
+pageRef = "/docs/react/input"
+parent = "Form Components (10)"
 weight = 4
 
 [[menu.sidebar]]
 name = "Radio"
 pageRef = "/docs/react/radio"
-parent = "Form Components"
+parent = "Form Components (10)"
 weight = 5
 
 [[menu.sidebar]]
-name = "Switch"
-pageRef = "/docs/react/switch"
-parent = "Form Components"
+name = "Select"
+pageRef = "/docs/react/select"
+parent = "Form Components (10)"
 weight = 6
-
-[[menu.sidebar]]
-name = "Textarea"
-pageRef = "/docs/react/textarea"
-parent = "Form Components"
-weight = 7
 
 [[menu.sidebar]]
 name = "Slider"
 pageRef = "/docs/react/slider"
-parent = "Form Components"
+parent = "Form Components (10)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Switch"
+pageRef = "/docs/react/switch"
+parent = "Form Components (10)"
 weight = 8
 
 [[menu.sidebar]]
-name = "Form"
-pageRef = "/docs/react/form"
-parent = "Form Components"
+name = "Textarea"
+pageRef = "/docs/react/textarea"
+parent = "Form Components (10)"
 weight = 9
 
 [[menu.sidebar]]
 name = "Upload"
 pageRef = "/docs/react/upload"
-parent = "Form Components"
+parent = "Form Components (10)"
 weight = 10
 
-# Layout Components
 [[menu.sidebar]]
-name = "Layout Components"
+name = "Layout Components (6)"
 parent = "React Components"
 weight = 2
 
 [[menu.sidebar]]
 name = "Card"
 pageRef = "/docs/react/card"
-parent = "Layout Components"
+parent = "Layout Components (6)"
 weight = 1
 
 [[menu.sidebar]]
 name = "Container"
 pageRef = "/docs/react/container"
-parent = "Layout Components"
+parent = "Layout Components (6)"
 weight = 2
+
+[[menu.sidebar]]
+name = "Divider"
+pageRef = "/docs/react/divider"
+parent = "Layout Components (6)"
+weight = 3
 
 [[menu.sidebar]]
 name = "Grid"
 pageRef = "/docs/react/grid"
-parent = "Layout Components"
-weight = 3
-
-[[menu.sidebar]]
-name = "Stack"
-pageRef = "/docs/react/stack"
-parent = "Layout Components"
+parent = "Layout Components (6)"
 weight = 4
 
 [[menu.sidebar]]
 name = "Space"
 pageRef = "/docs/react/space"
-parent = "Layout Components"
+parent = "Layout Components (6)"
 weight = 5
 
 [[menu.sidebar]]
-name = "Divider"
-pageRef = "/docs/react/divider"
-parent = "Layout Components"
+name = "Stack"
+pageRef = "/docs/react/stack"
+parent = "Layout Components (6)"
 weight = 6
 
-# Feedback Components
 [[menu.sidebar]]
-name = "Feedback Components"
+name = "Feedback Components (5)"
 parent = "React Components"
 weight = 3
 
 [[menu.sidebar]]
 name = "Alert"
 pageRef = "/docs/react/alert"
-parent = "Feedback Components"
+parent = "Feedback Components (5)"
 weight = 1
 
 [[menu.sidebar]]
 name = "Badge"
 pageRef = "/docs/react/badge"
-parent = "Feedback Components"
+parent = "Feedback Components (5)"
 weight = 2
-
-[[menu.sidebar]]
-name = "Spinner"
-pageRef = "/docs/react/spinner"
-parent = "Feedback Components"
-weight = 3
 
 [[menu.sidebar]]
 name = "Progress"
 pageRef = "/docs/react/progress"
-parent = "Feedback Components"
-weight = 4
+parent = "Feedback Components (5)"
+weight = 3
 
 [[menu.sidebar]]
 name = "Skeleton"
 pageRef = "/docs/react/skeleton"
-parent = "Feedback Components"
+parent = "Feedback Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Spinner"
+pageRef = "/docs/react/spinner"
+parent = "Feedback Components (5)"
 weight = 5
 
-# Navigation Components
 [[menu.sidebar]]
-name = "Navigation Components"
+name = "Navigation Components (6)"
 parent = "React Components"
 weight = 4
 
 [[menu.sidebar]]
-name = "Link"
-pageRef = "/docs/react/link"
-parent = "Navigation Components"
+name = "Breadcrumb"
+pageRef = "/docs/react/breadcrumb"
+parent = "Navigation Components (6)"
 weight = 1
 
 [[menu.sidebar]]
-name = "Breadcrumb"
-pageRef = "/docs/react/breadcrumb"
-parent = "Navigation Components"
+name = "Link"
+pageRef = "/docs/react/link"
+parent = "Navigation Components (6)"
 weight = 2
-
-[[menu.sidebar]]
-name = "Tabs"
-pageRef = "/docs/react/tabs"
-parent = "Navigation Components"
-weight = 3
 
 [[menu.sidebar]]
 name = "Menu"
 pageRef = "/docs/react/menu"
-parent = "Navigation Components"
+parent = "Navigation Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Pagination"
+pageRef = "/docs/react/pagination"
+parent = "Navigation Components (6)"
 weight = 4
 
 [[menu.sidebar]]
 name = "Steps"
 pageRef = "/docs/react/steps"
-parent = "Navigation Components"
+parent = "Navigation Components (6)"
 weight = 5
 
 [[menu.sidebar]]
-name = "Pagination"
-pageRef = "/docs/react/pagination"
-parent = "Navigation Components"
+name = "Tabs"
+pageRef = "/docs/react/tabs"
+parent = "Navigation Components (6)"
 weight = 6
 
-# Overlay Components
 [[menu.sidebar]]
-name = "Overlay Components"
+name = "Overlay Components (5)"
 parent = "React Components"
 weight = 5
 
 [[menu.sidebar]]
-name = "Modal"
-pageRef = "/docs/react/modal"
-parent = "Overlay Components"
+name = "Drawer"
+pageRef = "/docs/react/drawer"
+parent = "Overlay Components (5)"
 weight = 1
 
 [[menu.sidebar]]
-name = "Drawer"
-pageRef = "/docs/react/drawer"
-parent = "Overlay Components"
+name = "Dropdown"
+pageRef = "/docs/react/dropdown"
+parent = "Overlay Components (5)"
 weight = 2
 
 [[menu.sidebar]]
-name = "Tooltip"
-pageRef = "/docs/react/tooltip"
-parent = "Overlay Components"
+name = "Modal"
+pageRef = "/docs/react/modal"
+parent = "Overlay Components (5)"
 weight = 3
 
 [[menu.sidebar]]
 name = "Popover"
 pageRef = "/docs/react/popover"
-parent = "Overlay Components"
+parent = "Overlay Components (5)"
 weight = 4
 
 [[menu.sidebar]]
-name = "Dropdown"
-pageRef = "/docs/react/dropdown"
-parent = "Overlay Components"
+name = "Tooltip"
+pageRef = "/docs/react/tooltip"
+parent = "Overlay Components (5)"
 weight = 5
 
-# Data Display Components
 [[menu.sidebar]]
-name = "Data Display Components"
+name = "Data Display Components (7)"
 parent = "React Components"
 weight = 6
 
 [[menu.sidebar]]
 name = "Avatar"
 pageRef = "/docs/react/avatar"
-parent = "Data Display Components"
+parent = "Data Display Components (7)"
 weight = 1
-
-[[menu.sidebar]]
-name = "Tag"
-pageRef = "/docs/react/tag"
-parent = "Data Display Components"
-weight = 2
-
-[[menu.sidebar]]
-name = "Table"
-pageRef = "/docs/react/table"
-parent = "Data Display Components"
-weight = 3
 
 [[menu.sidebar]]
 name = "Collapse"
 pageRef = "/docs/react/collapse"
-parent = "Data Display Components"
-weight = 4
-
-[[menu.sidebar]]
-name = "Image"
-pageRef = "/docs/react/image"
-parent = "Data Display Components"
-weight = 5
+parent = "Data Display Components (7)"
+weight = 2
 
 [[menu.sidebar]]
 name = "Empty"
 pageRef = "/docs/react/empty"
-parent = "Data Display Components"
+parent = "Data Display Components (7)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Image"
+pageRef = "/docs/react/image"
+parent = "Data Display Components (7)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Table"
+pageRef = "/docs/react/table"
+parent = "Data Display Components (7)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tag"
+pageRef = "/docs/react/tag"
+parent = "Data Display Components (7)"
 weight = 6
 
 [[menu.sidebar]]
 name = "Typography"
 pageRef = "/docs/react/typography"
-parent = "Data Display Components"
+parent = "Data Display Components (7)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Vue Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Form Components (10)"
+parent = "Vue Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Button"
+pageRef = "/docs/vue/button"
+parent = "Form Components (10)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Checkbox"
+pageRef = "/docs/vue/checkbox"
+parent = "Form Components (10)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Form"
+pageRef = "/docs/vue/form"
+parent = "Form Components (10)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Input"
+pageRef = "/docs/vue/input"
+parent = "Form Components (10)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Radio"
+pageRef = "/docs/vue/radio"
+parent = "Form Components (10)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Select"
+pageRef = "/docs/vue/select"
+parent = "Form Components (10)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Slider"
+pageRef = "/docs/vue/slider"
+parent = "Form Components (10)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Switch"
+pageRef = "/docs/vue/switch"
+parent = "Form Components (10)"
+weight = 8
+
+[[menu.sidebar]]
+name = "Textarea"
+pageRef = "/docs/vue/textarea"
+parent = "Form Components (10)"
+weight = 9
+
+[[menu.sidebar]]
+name = "Upload"
+pageRef = "/docs/vue/upload"
+parent = "Form Components (10)"
+weight = 10
+
+[[menu.sidebar]]
+name = "Layout Components (6)"
+parent = "Vue Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Card"
+pageRef = "/docs/vue/card"
+parent = "Layout Components (6)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Container"
+pageRef = "/docs/vue/container"
+parent = "Layout Components (6)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Divider"
+pageRef = "/docs/vue/divider"
+parent = "Layout Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Grid"
+pageRef = "/docs/vue/grid"
+parent = "Layout Components (6)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Space"
+pageRef = "/docs/vue/space"
+parent = "Layout Components (6)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Stack"
+pageRef = "/docs/vue/stack"
+parent = "Layout Components (6)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Feedback Components (5)"
+parent = "Vue Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Alert"
+pageRef = "/docs/vue/alert"
+parent = "Feedback Components (5)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Badge"
+pageRef = "/docs/vue/badge"
+parent = "Feedback Components (5)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Progress"
+pageRef = "/docs/vue/progress"
+parent = "Feedback Components (5)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Skeleton"
+pageRef = "/docs/vue/skeleton"
+parent = "Feedback Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Spinner"
+pageRef = "/docs/vue/spinner"
+parent = "Feedback Components (5)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Navigation Components (6)"
+parent = "Vue Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Breadcrumb"
+pageRef = "/docs/vue/breadcrumb"
+parent = "Navigation Components (6)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Link"
+pageRef = "/docs/vue/link"
+parent = "Navigation Components (6)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Menu"
+pageRef = "/docs/vue/menu"
+parent = "Navigation Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Pagination"
+pageRef = "/docs/vue/pagination"
+parent = "Navigation Components (6)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Steps"
+pageRef = "/docs/vue/steps"
+parent = "Navigation Components (6)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tabs"
+pageRef = "/docs/vue/tabs"
+parent = "Navigation Components (6)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Overlay Components (5)"
+parent = "Vue Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Drawer"
+pageRef = "/docs/vue/drawer"
+parent = "Overlay Components (5)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Dropdown"
+pageRef = "/docs/vue/dropdown"
+parent = "Overlay Components (5)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Modal"
+pageRef = "/docs/vue/modal"
+parent = "Overlay Components (5)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Popover"
+pageRef = "/docs/vue/popover"
+parent = "Overlay Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Tooltip"
+pageRef = "/docs/vue/tooltip"
+parent = "Overlay Components (5)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Data Display Components (7)"
+parent = "Vue Components"
+weight = 6
+
+[[menu.sidebar]]
+name = "Avatar"
+pageRef = "/docs/vue/avatar"
+parent = "Data Display Components (7)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Collapse"
+pageRef = "/docs/vue/collapse"
+parent = "Data Display Components (7)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Empty"
+pageRef = "/docs/vue/empty"
+parent = "Data Display Components (7)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Image"
+pageRef = "/docs/vue/image"
+parent = "Data Display Components (7)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Table"
+pageRef = "/docs/vue/table"
+parent = "Data Display Components (7)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tag"
+pageRef = "/docs/vue/tag"
+parent = "Data Display Components (7)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Typography"
+pageRef = "/docs/vue/typography"
+parent = "Data Display Components (7)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Angular Components"
+weight = 6
+
+[[menu.sidebar]]
+name = "Form Components (10)"
+parent = "Angular Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Button"
+pageRef = "/docs/angular/button"
+parent = "Form Components (10)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Checkbox"
+pageRef = "/docs/angular/checkbox"
+parent = "Form Components (10)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Form"
+pageRef = "/docs/angular/form"
+parent = "Form Components (10)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Input"
+pageRef = "/docs/angular/input"
+parent = "Form Components (10)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Radio"
+pageRef = "/docs/angular/radio"
+parent = "Form Components (10)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Select"
+pageRef = "/docs/angular/select"
+parent = "Form Components (10)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Slider"
+pageRef = "/docs/angular/slider"
+parent = "Form Components (10)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Switch"
+pageRef = "/docs/angular/switch"
+parent = "Form Components (10)"
+weight = 8
+
+[[menu.sidebar]]
+name = "Textarea"
+pageRef = "/docs/angular/textarea"
+parent = "Form Components (10)"
+weight = 9
+
+[[menu.sidebar]]
+name = "Upload"
+pageRef = "/docs/angular/upload"
+parent = "Form Components (10)"
+weight = 10
+
+[[menu.sidebar]]
+name = "Layout Components (6)"
+parent = "Angular Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Card"
+pageRef = "/docs/angular/card"
+parent = "Layout Components (6)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Container"
+pageRef = "/docs/angular/container"
+parent = "Layout Components (6)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Divider"
+pageRef = "/docs/angular/divider"
+parent = "Layout Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Grid"
+pageRef = "/docs/angular/grid"
+parent = "Layout Components (6)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Space"
+pageRef = "/docs/angular/space"
+parent = "Layout Components (6)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Stack"
+pageRef = "/docs/angular/stack"
+parent = "Layout Components (6)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Feedback Components (5)"
+parent = "Angular Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Alert"
+pageRef = "/docs/angular/alert"
+parent = "Feedback Components (5)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Badge"
+pageRef = "/docs/angular/badge"
+parent = "Feedback Components (5)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Progress"
+pageRef = "/docs/angular/progress"
+parent = "Feedback Components (5)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Skeleton"
+pageRef = "/docs/angular/skeleton"
+parent = "Feedback Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Spinner"
+pageRef = "/docs/angular/spinner"
+parent = "Feedback Components (5)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Navigation Components (6)"
+parent = "Angular Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Breadcrumb"
+pageRef = "/docs/angular/breadcrumb"
+parent = "Navigation Components (6)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Link"
+pageRef = "/docs/angular/link"
+parent = "Navigation Components (6)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Menu"
+pageRef = "/docs/angular/menu"
+parent = "Navigation Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Pagination"
+pageRef = "/docs/angular/pagination"
+parent = "Navigation Components (6)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Steps"
+pageRef = "/docs/angular/steps"
+parent = "Navigation Components (6)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tabs"
+pageRef = "/docs/angular/tabs"
+parent = "Navigation Components (6)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Overlay Components (5)"
+parent = "Angular Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Drawer"
+pageRef = "/docs/angular/drawer"
+parent = "Overlay Components (5)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Dropdown"
+pageRef = "/docs/angular/dropdown"
+parent = "Overlay Components (5)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Modal"
+pageRef = "/docs/angular/modal"
+parent = "Overlay Components (5)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Popover"
+pageRef = "/docs/angular/popover"
+parent = "Overlay Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Tooltip"
+pageRef = "/docs/angular/tooltip"
+parent = "Overlay Components (5)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Data Display Components (7)"
+parent = "Angular Components"
+weight = 6
+
+[[menu.sidebar]]
+name = "Avatar"
+pageRef = "/docs/angular/avatar"
+parent = "Data Display Components (7)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Collapse"
+pageRef = "/docs/angular/collapse"
+parent = "Data Display Components (7)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Empty"
+pageRef = "/docs/angular/empty"
+parent = "Data Display Components (7)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Image"
+pageRef = "/docs/angular/image"
+parent = "Data Display Components (7)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Table"
+pageRef = "/docs/angular/table"
+parent = "Data Display Components (7)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tag"
+pageRef = "/docs/angular/tag"
+parent = "Data Display Components (7)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Typography"
+pageRef = "/docs/angular/typography"
+parent = "Data Display Components (7)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Svelte Components"
+weight = 7
+
+[[menu.sidebar]]
+name = "Form Components (10)"
+parent = "Svelte Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Button"
+pageRef = "/docs/svelte/button"
+parent = "Form Components (10)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Checkbox"
+pageRef = "/docs/svelte/checkbox"
+parent = "Form Components (10)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Form"
+pageRef = "/docs/svelte/form"
+parent = "Form Components (10)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Input"
+pageRef = "/docs/svelte/input"
+parent = "Form Components (10)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Radio"
+pageRef = "/docs/svelte/radio"
+parent = "Form Components (10)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Select"
+pageRef = "/docs/svelte/select"
+parent = "Form Components (10)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Slider"
+pageRef = "/docs/svelte/slider"
+parent = "Form Components (10)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Switch"
+pageRef = "/docs/svelte/switch"
+parent = "Form Components (10)"
+weight = 8
+
+[[menu.sidebar]]
+name = "Textarea"
+pageRef = "/docs/svelte/textarea"
+parent = "Form Components (10)"
+weight = 9
+
+[[menu.sidebar]]
+name = "Upload"
+pageRef = "/docs/svelte/upload"
+parent = "Form Components (10)"
+weight = 10
+
+[[menu.sidebar]]
+name = "Layout Components (6)"
+parent = "Svelte Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Card"
+pageRef = "/docs/svelte/card"
+parent = "Layout Components (6)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Container"
+pageRef = "/docs/svelte/container"
+parent = "Layout Components (6)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Divider"
+pageRef = "/docs/svelte/divider"
+parent = "Layout Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Grid"
+pageRef = "/docs/svelte/grid"
+parent = "Layout Components (6)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Space"
+pageRef = "/docs/svelte/space"
+parent = "Layout Components (6)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Stack"
+pageRef = "/docs/svelte/stack"
+parent = "Layout Components (6)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Feedback Components (5)"
+parent = "Svelte Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Alert"
+pageRef = "/docs/svelte/alert"
+parent = "Feedback Components (5)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Badge"
+pageRef = "/docs/svelte/badge"
+parent = "Feedback Components (5)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Progress"
+pageRef = "/docs/svelte/progress"
+parent = "Feedback Components (5)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Skeleton"
+pageRef = "/docs/svelte/skeleton"
+parent = "Feedback Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Spinner"
+pageRef = "/docs/svelte/spinner"
+parent = "Feedback Components (5)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Navigation Components (6)"
+parent = "Svelte Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Breadcrumb"
+pageRef = "/docs/svelte/breadcrumb"
+parent = "Navigation Components (6)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Link"
+pageRef = "/docs/svelte/link"
+parent = "Navigation Components (6)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Menu"
+pageRef = "/docs/svelte/menu"
+parent = "Navigation Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Pagination"
+pageRef = "/docs/svelte/pagination"
+parent = "Navigation Components (6)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Steps"
+pageRef = "/docs/svelte/steps"
+parent = "Navigation Components (6)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tabs"
+pageRef = "/docs/svelte/tabs"
+parent = "Navigation Components (6)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Overlay Components (5)"
+parent = "Svelte Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Drawer"
+pageRef = "/docs/svelte/drawer"
+parent = "Overlay Components (5)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Dropdown"
+pageRef = "/docs/svelte/dropdown"
+parent = "Overlay Components (5)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Modal"
+pageRef = "/docs/svelte/modal"
+parent = "Overlay Components (5)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Popover"
+pageRef = "/docs/svelte/popover"
+parent = "Overlay Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Tooltip"
+pageRef = "/docs/svelte/tooltip"
+parent = "Overlay Components (5)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Data Display Components (7)"
+parent = "Svelte Components"
+weight = 6
+
+[[menu.sidebar]]
+name = "Avatar"
+pageRef = "/docs/svelte/avatar"
+parent = "Data Display Components (7)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Collapse"
+pageRef = "/docs/svelte/collapse"
+parent = "Data Display Components (7)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Empty"
+pageRef = "/docs/svelte/empty"
+parent = "Data Display Components (7)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Image"
+pageRef = "/docs/svelte/image"
+parent = "Data Display Components (7)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Table"
+pageRef = "/docs/svelte/table"
+parent = "Data Display Components (7)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tag"
+pageRef = "/docs/svelte/tag"
+parent = "Data Display Components (7)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Typography"
+pageRef = "/docs/svelte/typography"
+parent = "Data Display Components (7)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Astro Components"
+weight = 8
+
+[[menu.sidebar]]
+name = "Form Components (10)"
+parent = "Astro Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Button"
+pageRef = "/docs/astro/button"
+parent = "Form Components (10)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Checkbox"
+pageRef = "/docs/astro/checkbox"
+parent = "Form Components (10)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Form"
+pageRef = "/docs/astro/form"
+parent = "Form Components (10)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Input"
+pageRef = "/docs/astro/input"
+parent = "Form Components (10)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Radio"
+pageRef = "/docs/astro/radio"
+parent = "Form Components (10)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Select"
+pageRef = "/docs/astro/select"
+parent = "Form Components (10)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Slider"
+pageRef = "/docs/astro/slider"
+parent = "Form Components (10)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Switch"
+pageRef = "/docs/astro/switch"
+parent = "Form Components (10)"
+weight = 8
+
+[[menu.sidebar]]
+name = "Textarea"
+pageRef = "/docs/astro/textarea"
+parent = "Form Components (10)"
+weight = 9
+
+[[menu.sidebar]]
+name = "Upload"
+pageRef = "/docs/astro/upload"
+parent = "Form Components (10)"
+weight = 10
+
+[[menu.sidebar]]
+name = "Layout Components (6)"
+parent = "Astro Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Card"
+pageRef = "/docs/astro/card"
+parent = "Layout Components (6)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Container"
+pageRef = "/docs/astro/container"
+parent = "Layout Components (6)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Divider"
+pageRef = "/docs/astro/divider"
+parent = "Layout Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Grid"
+pageRef = "/docs/astro/grid"
+parent = "Layout Components (6)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Space"
+pageRef = "/docs/astro/space"
+parent = "Layout Components (6)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Stack"
+pageRef = "/docs/astro/stack"
+parent = "Layout Components (6)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Feedback Components (5)"
+parent = "Astro Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Alert"
+pageRef = "/docs/astro/alert"
+parent = "Feedback Components (5)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Badge"
+pageRef = "/docs/astro/badge"
+parent = "Feedback Components (5)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Progress"
+pageRef = "/docs/astro/progress"
+parent = "Feedback Components (5)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Skeleton"
+pageRef = "/docs/astro/skeleton"
+parent = "Feedback Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Spinner"
+pageRef = "/docs/astro/spinner"
+parent = "Feedback Components (5)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Navigation Components (6)"
+parent = "Astro Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Breadcrumb"
+pageRef = "/docs/astro/breadcrumb"
+parent = "Navigation Components (6)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Link"
+pageRef = "/docs/astro/link"
+parent = "Navigation Components (6)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Menu"
+pageRef = "/docs/astro/menu"
+parent = "Navigation Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Pagination"
+pageRef = "/docs/astro/pagination"
+parent = "Navigation Components (6)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Steps"
+pageRef = "/docs/astro/steps"
+parent = "Navigation Components (6)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tabs"
+pageRef = "/docs/astro/tabs"
+parent = "Navigation Components (6)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Overlay Components (5)"
+parent = "Astro Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Drawer"
+pageRef = "/docs/astro/drawer"
+parent = "Overlay Components (5)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Dropdown"
+pageRef = "/docs/astro/dropdown"
+parent = "Overlay Components (5)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Modal"
+pageRef = "/docs/astro/modal"
+parent = "Overlay Components (5)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Popover"
+pageRef = "/docs/astro/popover"
+parent = "Overlay Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Tooltip"
+pageRef = "/docs/astro/tooltip"
+parent = "Overlay Components (5)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Data Display Components (7)"
+parent = "Astro Components"
+weight = 6
+
+[[menu.sidebar]]
+name = "Avatar"
+pageRef = "/docs/astro/avatar"
+parent = "Data Display Components (7)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Collapse"
+pageRef = "/docs/astro/collapse"
+parent = "Data Display Components (7)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Empty"
+pageRef = "/docs/astro/empty"
+parent = "Data Display Components (7)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Image"
+pageRef = "/docs/astro/image"
+parent = "Data Display Components (7)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Table"
+pageRef = "/docs/astro/table"
+parent = "Data Display Components (7)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tag"
+pageRef = "/docs/astro/tag"
+parent = "Data Display Components (7)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Typography"
+pageRef = "/docs/astro/typography"
+parent = "Data Display Components (7)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Vanilla JS Components"
+weight = 9
+
+[[menu.sidebar]]
+name = "Form Components (10)"
+parent = "Vanilla JS Components"
+weight = 1
+
+[[menu.sidebar]]
+name = "Button"
+pageRef = "/docs/vanilla/button"
+parent = "Form Components (10)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Checkbox"
+pageRef = "/docs/vanilla/checkbox"
+parent = "Form Components (10)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Form"
+pageRef = "/docs/vanilla/form"
+parent = "Form Components (10)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Input"
+pageRef = "/docs/vanilla/input"
+parent = "Form Components (10)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Radio"
+pageRef = "/docs/vanilla/radio"
+parent = "Form Components (10)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Select"
+pageRef = "/docs/vanilla/select"
+parent = "Form Components (10)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Slider"
+pageRef = "/docs/vanilla/slider"
+parent = "Form Components (10)"
+weight = 7
+
+[[menu.sidebar]]
+name = "Switch"
+pageRef = "/docs/vanilla/switch"
+parent = "Form Components (10)"
+weight = 8
+
+[[menu.sidebar]]
+name = "Textarea"
+pageRef = "/docs/vanilla/textarea"
+parent = "Form Components (10)"
+weight = 9
+
+[[menu.sidebar]]
+name = "Upload"
+pageRef = "/docs/vanilla/upload"
+parent = "Form Components (10)"
+weight = 10
+
+[[menu.sidebar]]
+name = "Layout Components (6)"
+parent = "Vanilla JS Components"
+weight = 2
+
+[[menu.sidebar]]
+name = "Card"
+pageRef = "/docs/vanilla/card"
+parent = "Layout Components (6)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Container"
+pageRef = "/docs/vanilla/container"
+parent = "Layout Components (6)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Divider"
+pageRef = "/docs/vanilla/divider"
+parent = "Layout Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Grid"
+pageRef = "/docs/vanilla/grid"
+parent = "Layout Components (6)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Space"
+pageRef = "/docs/vanilla/space"
+parent = "Layout Components (6)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Stack"
+pageRef = "/docs/vanilla/stack"
+parent = "Layout Components (6)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Feedback Components (5)"
+parent = "Vanilla JS Components"
+weight = 3
+
+[[menu.sidebar]]
+name = "Alert"
+pageRef = "/docs/vanilla/alert"
+parent = "Feedback Components (5)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Badge"
+pageRef = "/docs/vanilla/badge"
+parent = "Feedback Components (5)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Progress"
+pageRef = "/docs/vanilla/progress"
+parent = "Feedback Components (5)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Skeleton"
+pageRef = "/docs/vanilla/skeleton"
+parent = "Feedback Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Spinner"
+pageRef = "/docs/vanilla/spinner"
+parent = "Feedback Components (5)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Navigation Components (6)"
+parent = "Vanilla JS Components"
+weight = 4
+
+[[menu.sidebar]]
+name = "Breadcrumb"
+pageRef = "/docs/vanilla/breadcrumb"
+parent = "Navigation Components (6)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Link"
+pageRef = "/docs/vanilla/link"
+parent = "Navigation Components (6)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Menu"
+pageRef = "/docs/vanilla/menu"
+parent = "Navigation Components (6)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Pagination"
+pageRef = "/docs/vanilla/pagination"
+parent = "Navigation Components (6)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Steps"
+pageRef = "/docs/vanilla/steps"
+parent = "Navigation Components (6)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tabs"
+pageRef = "/docs/vanilla/tabs"
+parent = "Navigation Components (6)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Overlay Components (5)"
+parent = "Vanilla JS Components"
+weight = 5
+
+[[menu.sidebar]]
+name = "Drawer"
+pageRef = "/docs/vanilla/drawer"
+parent = "Overlay Components (5)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Dropdown"
+pageRef = "/docs/vanilla/dropdown"
+parent = "Overlay Components (5)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Modal"
+pageRef = "/docs/vanilla/modal"
+parent = "Overlay Components (5)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Popover"
+pageRef = "/docs/vanilla/popover"
+parent = "Overlay Components (5)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Tooltip"
+pageRef = "/docs/vanilla/tooltip"
+parent = "Overlay Components (5)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Data Display Components (7)"
+parent = "Vanilla JS Components"
+weight = 6
+
+[[menu.sidebar]]
+name = "Avatar"
+pageRef = "/docs/vanilla/avatar"
+parent = "Data Display Components (7)"
+weight = 1
+
+[[menu.sidebar]]
+name = "Collapse"
+pageRef = "/docs/vanilla/collapse"
+parent = "Data Display Components (7)"
+weight = 2
+
+[[menu.sidebar]]
+name = "Empty"
+pageRef = "/docs/vanilla/empty"
+parent = "Data Display Components (7)"
+weight = 3
+
+[[menu.sidebar]]
+name = "Image"
+pageRef = "/docs/vanilla/image"
+parent = "Data Display Components (7)"
+weight = 4
+
+[[menu.sidebar]]
+name = "Table"
+pageRef = "/docs/vanilla/table"
+parent = "Data Display Components (7)"
+weight = 5
+
+[[menu.sidebar]]
+name = "Tag"
+pageRef = "/docs/vanilla/tag"
+parent = "Data Display Components (7)"
+weight = 6
+
+[[menu.sidebar]]
+name = "Typography"
+pageRef = "/docs/vanilla/typography"
+parent = "Data Display Components (7)"
 weight = 7
 
 [params]

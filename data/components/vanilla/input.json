@@ -1,0 +1,19 @@
+{
+  "name": "Input",
+  "framework": "vanilla",
+  "frameworkName": "Vanilla JS",
+  "category": "form",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Button",
+    "Select",
+    "Checkbox",
+    "Radio",
+    "Switch"
+  ],
+  "designTokens": [
+    "--error"
+  ]
+}

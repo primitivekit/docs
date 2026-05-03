@@ -1,0 +1,29 @@
+{
+  "name": "Avatar",
+  "framework": "angular",
+  "frameworkName": "Angular",
+  "category": "data-display",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Tag",
+    "Table",
+    "Collapse",
+    "Image",
+    "Empty"
+  ],
+  "designTokens": [
+    "--avatar-size",
+    "--avatar-bg-color",
+    "--avatar-color",
+    "--avatar-border-radius",
+    "--avatar-border-width",
+    "--avatar-border-color",
+    "--avatar-font-size",
+    "--small",
+    "--large",
+    "--square",
+    "--clickable"
+  ]
+}

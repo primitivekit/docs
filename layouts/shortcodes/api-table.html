@@ -1,0 +1,346 @@
+{{/*
+  API Reference Table Shortcode
+  
+  Usage:
+  {{< api-table >}}
+  - name: variant
+    type: "'solid' | 'subtle' | 'outline'"
+    default: "'solid'"
+    description: Visual variant
+  - name: colorScheme
+    type: "'primary' | 'secondary' | 'success'"
+    default: "'primary'"
+    description: Color scheme
+  - name: children
+    type: ReactNode
+    required: true
+    description: Badge content
+  {{< /api-table >}}
+  
+  Or with JSON:
+  {{< api-table props='[{"name":"variant","type":"string","default":"solid","description":"Visual variant"}]' >}}
+*/}}
+
+{{ $props := slice }}
+
+{{/* Parse props from inner content (YAML) or from props parameter (JSON) */}}
+{{ if .Inner }}
+  {{ $props = .Inner | transform.Unmarshal }}
+{{ else if .Get "props" }}
+  {{ $props = .Get "props" | transform.Unmarshal }}
+{{ end }}
+
+{{/* Generate unique ID for this table instance */}}
+{{ $tableId := printf "api-table-%d" now.UnixMilli }}
+
+<div class="api-table-wrapper" id="{{ $tableId }}">
+  <table class="api-table">
+    <thead>
+      <tr>
+        <th class="sortable" data-sort="name">
+          <button class="sort-button" aria-label="Sort by property name">
+            Property
+            <span class="sort-icon" aria-hidden="true">⇅</span>
+          </button>
+        </th>
+        <th>Type</th>
+        <th>Default</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $props }}
+      <tr>
+        <td class="prop-name">
+          <code>{{ .name }}</code>
+          {{ if .required }}
+          <span class="required-indicator" title="Required" aria-label="Required">*</span>
+          {{ end }}
+        </td>
+        <td class="prop-type">
+          <code>{{ .type }}</code>
+        </td>
+        <td class="prop-default">
+          {{ if .required }}
+          <strong>required</strong>
+          {{ else if .default }}
+          <code>{{ .default }}</code>
+          {{ else }}
+          <span class="no-default">-</span>
+          {{ end }}
+        </td>
+        <td class="prop-description">
+          {{ .description | markdownify }}
+        </td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .api-table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    border: 1px solid var(--color-border, #e5e7eb);
+  }
+
+  .api-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .api-table thead {
+    background-color: var(--color-bg-secondary, #f9fafb);
+    border-bottom: 2px solid var(--color-border, #e5e7eb);
+  }
+
+  .api-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: var(--color-text-primary, #111827);
+    white-space: nowrap;
+  }
+
+  .api-table th.sortable {
+    padding: 0;
+  }
+
+  .api-table .sort-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--color-text-primary, #111827);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s;
+  }
+
+  .api-table .sort-button:hover {
+    background-color: var(--color-bg-hover, #f3f4f6);
+  }
+
+  .api-table .sort-button:focus {
+    outline: 2px solid var(--color-primary, #3b82f6);
+    outline-offset: -2px;
+  }
+
+  .api-table .sort-icon {
+    opacity: 0.5;
+    font-size: 0.75rem;
+  }
+
+  .api-table .sort-button[data-sorted="asc"] .sort-icon::before {
+    content: "↑";
+  }
+
+  .api-table .sort-button[data-sorted="desc"] .sort-icon::before {
+    content: "↓";
+  }
+
+  .api-table tbody tr {
+    border-bottom: 1px solid var(--color-border, #e5e7eb);
+  }
+
+  .api-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .api-table tbody tr:hover {
+    background-color: var(--color-bg-hover, #f9fafb);
+  }
+
+  .api-table td {
+    padding: 0.75rem 1rem;
+    vertical-align: top;
+  }
+
+  .api-table .prop-name {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .api-table .required-indicator {
+    color: var(--color-danger, #ef4444);
+    font-weight: bold;
+    margin-left: 0.25rem;
+    font-size: 1rem;
+  }
+
+  .api-table code {
+    background-color: var(--color-code-bg, #f3f4f6);
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    color: var(--color-code-text, #1f2937);
+  }
+
+  .api-table .prop-type code {
+    word-break: break-word;
+    white-space: pre-wrap;
+  }
+
+  .api-table .no-default {
+    color: var(--color-text-secondary, #6b7280);
+  }
+
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .api-table-wrapper {
+      border-color: var(--color-border-dark, #374151);
+    }
+
+    .api-table thead {
+      background-color: var(--color-bg-secondary-dark, #1f2937);
+      border-bottom-color: var(--color-border-dark, #374151);
+    }
+
+    .api-table th {
+      color: var(--color-text-primary-dark, #f9fafb);
+    }
+
+    .api-table .sort-button {
+      color: var(--color-text-primary-dark, #f9fafb);
+    }
+
+    .api-table .sort-button:hover {
+      background-color: var(--color-bg-hover-dark, #374151);
+    }
+
+    .api-table tbody tr {
+      border-bottom-color: var(--color-border-dark, #374151);
+    }
+
+    .api-table tbody tr:hover {
+      background-color: var(--color-bg-hover-dark, #1f2937);
+    }
+
+    .api-table code {
+      background-color: var(--color-code-bg-dark, #374151);
+      color: var(--color-code-text-dark, #e5e7eb);
+    }
+
+    .api-table .no-default {
+      color: var(--color-text-secondary-dark, #9ca3af);
+    }
+  }
+
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .api-table {
+      font-size: 0.8125rem;
+    }
+
+    .api-table th,
+    .api-table td {
+      padding: 0.5rem 0.75rem;
+    }
+
+    .api-table .sort-button {
+      padding: 0.5rem 0.75rem;
+    }
+
+    /* Stack table on very small screens */
+    @media (max-width: 640px) {
+      .api-table thead {
+        display: none;
+      }
+
+      .api-table,
+      .api-table tbody,
+      .api-table tr,
+      .api-table td {
+        display: block;
+      }
+
+      .api-table tr {
+        margin-bottom: 1rem;
+        border: 1px solid var(--color-border, #e5e7eb);
+        border-radius: 0.5rem;
+        padding: 0.75rem;
+      }
+
+      .api-table td {
+        padding: 0.5rem 0;
+        border: none;
+      }
+
+      .api-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.25rem;
+        color: var(--color-text-secondary, #6b7280);
+      }
+
+      .api-table .prop-name::before {
+        content: "Property: ";
+      }
+
+      .api-table .prop-type::before {
+        content: "Type: ";
+      }
+
+      .api-table .prop-default::before {
+        content: "Default: ";
+      }
+
+      .api-table .prop-description::before {
+        content: "Description: ";
+      }
+    }
+  }
+</style>
+
+<script>
+  (function() {
+    const table = document.getElementById('{{ $tableId }}');
+    if (!table) return;
+
+    const sortButton = table.querySelector('.sort-button');
+    if (!sortButton) return;
+
+    const tbody = table.querySelector('tbody');
+    let sortDirection = 'none'; // 'none', 'asc', 'desc'
+
+    sortButton.addEventListener('click', function() {
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      
+      // Cycle through sort states: none -> asc -> desc -> none
+      if (sortDirection === 'none' || sortDirection === 'desc') {
+        sortDirection = 'asc';
+      } else {
+        sortDirection = 'desc';
+      }
+
+      // Sort rows
+      rows.sort((a, b) => {
+        const aText = a.querySelector('.prop-name code').textContent.toLowerCase();
+        const bText = b.querySelector('.prop-name code').textContent.toLowerCase();
+        
+        if (sortDirection === 'asc') {
+          return aText.localeCompare(bText);
+        } else {
+          return bText.localeCompare(aText);
+        }
+      });
+
+      // Update DOM
+      rows.forEach(row => tbody.appendChild(row));
+
+      // Update button state
+      sortButton.setAttribute('data-sorted', sortDirection);
+      sortButton.setAttribute('aria-label', `Sort by property name (currently ${sortDirection}ending)`);
+    });
+  })();
+</script>

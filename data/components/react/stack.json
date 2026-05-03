@@ -1,0 +1,35 @@
+{
+  "name": "Stack",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "layout",
+  "description": "",
+  "props": [],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Card",
+    "Container",
+    "Grid",
+    "Space",
+    "Divider"
+  ],
+  "designTokens": [
+    "--stack-gap",
+    "--stack-direction",
+    "--stack-align-items",
+    "--stack-justify-content",
+    "--horizontal",
+    "--vertical",
+    "--align-start",
+    "--align-center",
+    "--align-end",
+    "--align-stretch",
+    "--justify-start",
+    "--justify-center",
+    "--justify-end",
+    "--justify-between",
+    "--justify-around",
+    "--justify-evenly",
+    "--wrap"
+  ]
+}

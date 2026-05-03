@@ -1,0 +1,32 @@
+{
+  "name": "Tag",
+  "framework": "angular",
+  "frameworkName": "Angular",
+  "category": "data-display",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Avatar",
+    "Table",
+    "Collapse",
+    "Image",
+    "Empty"
+  ],
+  "designTokens": [
+    "--tag-bg-color",
+    "--tag-color",
+    "--tag-border-color",
+    "--tag-border-radius",
+    "--tag-padding-x",
+    "--tag-padding-y",
+    "--tag-font-size",
+    "--small",
+    "--large",
+    "--primary",
+    "--success",
+    "--warning",
+    "--danger",
+    "--info"
+  ]
+}

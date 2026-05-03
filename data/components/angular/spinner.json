@@ -1,0 +1,27 @@
+{
+  "name": "Spinner",
+  "framework": "angular",
+  "frameworkName": "Angular",
+  "category": "feedback",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Alert",
+    "Badge",
+    "Progress",
+    "Skeleton"
+  ],
+  "designTokens": [
+    "--spinner-size",
+    "--spinner-color",
+    "--spinner-border-width",
+    "--spinner-speed",
+    "--border",
+    "--dots",
+    "--small",
+    "--medium",
+    "--large",
+    "--xlarge"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Skeleton",
+  "framework": "vue",
+  "frameworkName": "Vue",
+  "category": "feedback",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Alert",
+    "Badge",
+    "Spinner",
+    "Progress"
+  ],
+  "designTokens": [
+    "--skeleton-bg-color",
+    "--skeleton-animation-duration",
+    "--skeleton-width",
+    "--skeleton-height",
+    "--skeleton-border-radius",
+    "--text",
+    "--rectangular",
+    "--circular",
+    "--circle"
+  ]
+}

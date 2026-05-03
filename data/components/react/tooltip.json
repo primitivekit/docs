@@ -1,0 +1,114 @@
+{
+  "name": "Tooltip",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "overlay",
+  "description": "",
+  "props": [
+    {
+      "name": "content",
+      "type": "ReactNode",
+      "required": true,
+      "description": "Tooltip content"
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true,
+      "description": "Element that triggers the tooltip"
+    },
+    {
+      "name": "placement",
+      "type": "TooltipPlacement",
+      "required": false,
+      "default": "'top'",
+      "description": "Tooltip placement"
+    },
+    {
+      "name": "variant",
+      "type": "TooltipVariant",
+      "required": false,
+      "default": "'dark'",
+      "description": "Tooltip variant"
+    },
+    {
+      "name": "showArrow",
+      "type": "boolean",
+      "required": false,
+      "default": "true",
+      "description": "Show arrow"
+    },
+    {
+      "name": "delay",
+      "type": "number",
+      "required": false,
+      "default": "200",
+      "description": "Delay before showing (ms)"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Disable tooltip"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "style",
+      "type": "TooltipCSSVariables",
+      "required": false,
+      "description": "Inline styles with CSS variable support"
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": false,
+      "description": "Accessible label"
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Modal",
+    "Drawer",
+    "Popover",
+    "Dropdown"
+  ],
+  "designTokens": [
+    "--tooltip-bg-color",
+    "--tooltip-color",
+    "--tooltip-border-radius",
+    "--tooltip-border-width",
+    "--tooltip-border-color",
+    "--tooltip-box-shadow",
+    "--tooltip-padding-top",
+    "--tooltip-padding-y",
+    "--tooltip-padding-right",
+    "--tooltip-padding-x",
+    "--tooltip-padding-bottom",
+    "--tooltip-padding-left",
+    "--tooltip-max-width",
+    "--tooltip-z-index",
+    "--tooltip-font-size",
+    "--tooltip-font-weight",
+    "--tooltip-line-height",
+    "--tooltip-text-align",
+    "--tooltip-arrow-size",
+    "--tooltip-arrow-color",
+    "--tooltip-arrow-border-color",
+    "--tooltip-offset",
+    "--tooltip-animation-duration",
+    "--tooltip-animation-timing",
+    "--tooltip-opacity",
+    "--visible",
+    "--top",
+    "--bottom",
+    "--left",
+    "--right",
+    "--light"
+  ]
+}

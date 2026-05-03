@@ -1,0 +1,103 @@
+{
+  "name": "Empty",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "data-display",
+  "description": "",
+  "props": [
+    {
+      "name": "description",
+      "type": "ReactNode",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "image",
+      "type": "ReactNode",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "size",
+      "type": "EmptySize",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "cssVariables",
+      "type": "Partial<EmptyCSSVariables>",
+      "required": false,
+      "description": ""
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Avatar",
+    "Tag",
+    "Table",
+    "Collapse",
+    "Image"
+  ],
+  "designTokens": [
+    "--empty-padding",
+    "--empty-text-align",
+    "--empty-max-width",
+    "--empty-margin",
+    "--empty-transition-duration",
+    "--empty-transition-timing",
+    "--empty-animation-duration",
+    "--empty-animation-timing",
+    "--empty-image-width",
+    "--empty-image-height",
+    "--empty-image-margin-bottom",
+    "--empty-image-opacity",
+    "--empty-image-filter",
+    "--empty-description-color",
+    "--empty-description-font-size",
+    "--empty-description-font-weight",
+    "--empty-description-line-height",
+    "--empty-description-margin-top",
+    "--empty-description-margin-bottom",
+    "--empty-content-margin-top",
+    "--empty-content-font-size",
+    "--empty-content-color",
+    "--small",
+    "--empty-small-padding",
+    "--empty-small-image-width",
+    "--empty-small-image-height",
+    "--empty-small-description-font-size",
+    "--empty-small-content-font-size",
+    "--medium",
+    "--empty-medium-padding",
+    "--empty-medium-image-width",
+    "--empty-medium-image-height",
+    "--empty-medium-description-font-size",
+    "--empty-medium-content-font-size",
+    "--large",
+    "--empty-large-padding",
+    "--empty-large-image-width",
+    "--empty-large-image-height",
+    "--empty-large-description-font-size",
+    "--empty-large-content-font-size",
+    "--empty-hover-opacity",
+    "--empty-hover-transform"
+  ]
+}

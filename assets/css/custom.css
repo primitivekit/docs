@@ -411,3 +411,59 @@ nav .hx\:h-16,
   background-color: #000000 !important;
   /* background-color: oklch(16.306% 0.01625 261.509) !important; */
 }
+
+/* ============================================
+ * FRAMEWORK CARDS ON HOME PAGE
+ * ============================================ */
+
+.hx-grid a {
+  text-decoration: none !important;
+}
+
+.hx-grid a:hover {
+  transform: translateY(-4px);
+}
+
+/* ============================================
+ * TABS STYLING
+ * ============================================ */
+
+.hextra-tabs {
+  margin: 2rem 0;
+}
+
+.hextra-tabs [role="tablist"] {
+  border-bottom: 2px solid #e5e5e5;
+  margin-bottom: 1.5rem;
+}
+
+:root[class~="dark"] .hextra-tabs [role="tablist"] {
+  border-bottom-color: #262626;
+}
+
+.hextra-tabs [role="tab"] {
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  color: #737373;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.2s ease;
+}
+
+.hextra-tabs [role="tab"]:hover {
+  color: #171717;
+}
+
+:root[class~="dark"] .hextra-tabs [role="tab"]:hover {
+  color: #fafafa;
+}
+
+.hextra-tabs [role="tab"][aria-selected="true"] {
+  color: #0ea5e9;
+  border-bottom-color: #0ea5e9;
+}
+
+:root[class~="dark"] .hextra-tabs [role="tab"][aria-selected="true"] {
+  color: #38bdf8;
+  border-bottom-color: #38bdf8;
+}

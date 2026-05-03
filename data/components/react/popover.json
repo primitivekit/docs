@@ -1,0 +1,205 @@
+{
+  "name": "Popover",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "overlay",
+  "description": "",
+  "props": [
+    {
+      "name": "content",
+      "type": "ReactNode",
+      "required": true,
+      "description": "Popover content"
+    },
+    {
+      "name": "header",
+      "type": "ReactNode",
+      "required": false,
+      "description": "Popover header (optional)"
+    },
+    {
+      "name": "footer",
+      "type": "ReactNode",
+      "required": false,
+      "description": "Popover footer (optional)"
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true,
+      "description": "Element that triggers the popover"
+    },
+    {
+      "name": "placement",
+      "type": "PopoverPlacement",
+      "required": false,
+      "default": "'bottom'",
+      "description": "Popover placement"
+    },
+    {
+      "name": "trigger",
+      "type": "PopoverTrigger",
+      "required": false,
+      "default": "'click'",
+      "description": "Trigger type"
+    },
+    {
+      "name": "showArrow",
+      "type": "boolean",
+      "required": false,
+      "default": "true",
+      "description": "Show arrow"
+    },
+    {
+      "name": "showCloseButton",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Show close button"
+    },
+    {
+      "name": "closeOnOutsideClick",
+      "type": "boolean",
+      "required": false,
+      "default": "true",
+      "description": "Close on outside click"
+    },
+    {
+      "name": "closeOnEscape",
+      "type": "boolean",
+      "required": false,
+      "default": "true",
+      "description": "Close on escape key"
+    },
+    {
+      "name": "delay",
+      "type": "number",
+      "required": false,
+      "default": "200",
+      "description": "Delay before showing (ms) - for hover trigger"
+    },
+    {
+      "name": "isOpen",
+      "type": "boolean",
+      "required": false,
+      "description": "Controlled open state"
+    },
+    {
+      "name": "defaultOpen",
+      "type": "boolean",
+      "required": false,
+      "description": "Default open state"
+    },
+    {
+      "name": "onOpenChange",
+      "type": "(isOpen: boolean) => void",
+      "required": false,
+      "description": "Callback when open state changes"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "required": false,
+      "default": "false",
+      "description": "Disable popover"
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": "Additional CSS classes"
+    },
+    {
+      "name": "style",
+      "type": "PopoverCSSVariables",
+      "required": false,
+      "description": "Inline styles with CSS variable support"
+    },
+    {
+      "name": "ariaLabel",
+      "type": "string",
+      "required": false,
+      "description": "Accessible label"
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Modal",
+    "Drawer",
+    "Tooltip",
+    "Dropdown"
+  ],
+  "designTokens": [
+    "--popover-bg-color",
+    "--popover-color",
+    "--popover-border-radius",
+    "--popover-border-width",
+    "--popover-border-color",
+    "--popover-box-shadow",
+    "--popover-padding-top",
+    "--popover-padding-y",
+    "--popover-padding-right",
+    "--popover-padding-x",
+    "--popover-padding-bottom",
+    "--popover-padding-left",
+    "--popover-max-width",
+    "--popover-min-width",
+    "--popover-max-height",
+    "--popover-z-index",
+    "--popover-header-bg-color",
+    "--popover-header-color",
+    "--popover-header-padding-top",
+    "--popover-header-padding-y",
+    "--popover-header-padding-right",
+    "--popover-header-padding-x",
+    "--popover-header-padding-bottom",
+    "--popover-header-padding-left",
+    "--popover-header-border-bottom-width",
+    "--popover-header-border-bottom-color",
+    "--popover-header-font-size",
+    "--popover-header-font-weight",
+    "--popover-body-padding-top",
+    "--popover-body-padding-y",
+    "--popover-body-padding-right",
+    "--popover-body-padding-x",
+    "--popover-body-padding-bottom",
+    "--popover-body-padding-left",
+    "--popover-body-font-size",
+    "--popover-body-line-height",
+    "--popover-footer-bg-color",
+    "--popover-footer-padding-top",
+    "--popover-footer-padding-y",
+    "--popover-footer-padding-right",
+    "--popover-footer-padding-x",
+    "--popover-footer-padding-bottom",
+    "--popover-footer-padding-left",
+    "--popover-footer-border-top-width",
+    "--popover-footer-border-top-color",
+    "--popover-footer-gap",
+    "--popover-arrow-size",
+    "--popover-arrow-color",
+    "--popover-arrow-border-color",
+    "--popover-close-size",
+    "--popover-close-color",
+    "--popover-close-color-hover",
+    "--popover-close-bg-color",
+    "--popover-close-bg-color-hover",
+    "--popover-offset",
+    "--popover-animation-duration",
+    "--popover-animation-timing",
+    "--popover-opacity",
+    "--open",
+    "--top",
+    "--bottom",
+    "--left",
+    "--right",
+    "--top-start",
+    "--top-end",
+    "--bottom-start",
+    "--bottom-end",
+    "--left-start",
+    "--left-end",
+    "--right-start",
+    "--right-end"
+  ]
+}

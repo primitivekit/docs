@@ -1,0 +1,29 @@
+{
+  "name": "Space",
+  "framework": "svelte",
+  "frameworkName": "Svelte",
+  "category": "layout",
+  "description": "",
+  "props": [],
+  "version": "0.1.0",
+  "relatedComponents": [
+    "Card",
+    "Container",
+    "Grid",
+    "Stack",
+    "Divider"
+  ],
+  "designTokens": [
+    "--space-gap",
+    "--horizontal",
+    "--vertical",
+    "--small",
+    "--medium",
+    "--large",
+    "--align-start",
+    "--align-end",
+    "--align-center",
+    "--align-baseline",
+    "--wrap"
+  ]
+}

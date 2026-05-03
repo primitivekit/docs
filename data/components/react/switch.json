@@ -1,0 +1,33 @@
+{
+  "name": "Switch",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "form",
+  "description": "",
+  "props": [],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Button",
+    "Input",
+    "Select",
+    "Checkbox",
+    "Radio"
+  ],
+  "designTokens": [
+    "--switch-width",
+    "--switch-height",
+    "--switch-bg-color",
+    "--switch-bg-color-checked",
+    "--switch-thumb-size",
+    "--switch-thumb-color",
+    "--switch-thumb-offset",
+    "--switch-label-gap",
+    "--switch-label-color",
+    "--switch-label-font-size",
+    "--switch-ring-color",
+    "--small",
+    "--large",
+    "--error",
+    "--disabled"
+  ]
+}

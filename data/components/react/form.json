@@ -1,0 +1,107 @@
+{
+  "name": "Form",
+  "framework": "react",
+  "frameworkName": "React",
+  "category": "form",
+  "description": "",
+  "props": [
+    {
+      "name": "layout",
+      "type": "FormLayout",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "size",
+      "type": "FormSize",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "children",
+      "type": "ReactNode",
+      "required": true,
+      "description": ""
+    },
+    {
+      "name": "className",
+      "type": "string",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "style",
+      "type": "CSSProperties",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "cssVariables",
+      "type": "Partial<FormCSSVariables>",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onSubmit",
+      "type": "(values: Record<string, any>) => void",
+      "required": false,
+      "description": ""
+    },
+    {
+      "name": "onValidate",
+      "type": "(values: Record<string, any>) => Record<string, string>",
+      "required": false,
+      "description": ""
+    }
+  ],
+  "version": "0.2.1",
+  "relatedComponents": [
+    "Button",
+    "Input",
+    "Select",
+    "Checkbox",
+    "Radio"
+  ],
+  "designTokens": [
+    "--form-gap",
+    "--form-padding",
+    "--form-item-margin-bottom",
+    "--form-label-font-size",
+    "--form-label-font-weight",
+    "--form-label-line-height",
+    "--form-label-color",
+    "--form-item-label-margin-bottom",
+    "--form-label-required-color",
+    "--form-label-required-margin-left",
+    "--form-error-font-size",
+    "--form-error-color",
+    "--form-error-margin-top",
+    "--form-error-line-height",
+    "--form-help-font-size",
+    "--form-help-color",
+    "--form-help-margin-top",
+    "--form-help-line-height",
+    "--horizontal",
+    "--form-horizontal-label-width",
+    "--form-horizontal-label-text-align",
+    "--form-horizontal-label-padding-right",
+    "--form-horizontal-content-flex",
+    "--inline",
+    "--form-inline-item-display",
+    "--form-inline-item-margin-right",
+    "--form-inline-label-margin-right",
+    "--form-inline-label-margin-bottom",
+    "--small",
+    "--form-small-label-font-size",
+    "--form-small-error-font-size",
+    "--form-small-help-font-size",
+    "--medium",
+    "--form-medium-label-font-size",
+    "--form-medium-error-font-size",
+    "--form-medium-help-font-size",
+    "--large",
+    "--form-large-label-font-size",
+    "--form-large-error-font-size",
+    "--form-large-help-font-size"
+  ]
+}
