@@ -21,11 +21,11 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx-mb-6">
+<div class="hx-mb-16">
 {{< hextra/hero-button text="Get Started" link="docs" >}}
 </div>
 
-<div class="hx-mt-24"></div>
+<div style="margin-top: 8rem;"></div>
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
@@ -73,9 +73,11 @@ layout: hextra-home
   >}}
 {{< /hextra/feature-grid >}}
 
-<div class="hx-mt-32"></div>
+<div style="margin-top: 8rem;"></div>
 
 ## Quick Start
+
+<div class="hx-mb-8"></div>
 
 Get up and running in seconds with your favorite framework.
 
@@ -108,9 +110,11 @@ Get up and running in seconds with your favorite framework.
   >}}
 {{< /hextra/feature-grid >}}
 
-<div class="hx-mt-32"></div>
+<div style="margin-top: 8rem;"></div>
 
 ## Installation
+
+<div class="hx-mb-8"></div>
 
 Choose your framework and get started in seconds.
 
@@ -136,9 +140,11 @@ npm install @primitivekit/astro
 npm install @primitivekit/vanilla
 ```
 
-<div class="hx-mt-32"></div>
+<div style="margin-top: 8rem;"></div>
 
 ## Example Usage
+
+<div class="hx-mb-8"></div>
 
 Here's how easy it is to build beautiful UIs with PrimitiveKit.
 
@@ -158,11 +164,15 @@ function App() {
     </Card>
   );
 }
+
+export default App;
 ```
 
-<div class="hx-mt-32"></div>
+<div style="margin-top: 8rem;"></div>
 
 ## Why Choose PrimitiveKit?
+
+<div class="hx-mb-8"></div>
 
 <div class="hx-mt-8"></div>
 
@@ -193,9 +203,11 @@ function App() {
   >}}
 {{< /hextra/feature-grid >}}
 
-<div class="hx-mt-32"></div>
+<div style="margin-top: 8rem;"></div>
 
 ## Explore Components
+
+<div class="hx-mb-8"></div>
 
 Browse our complete collection of components organized by category.
 
@@ -234,9 +246,11 @@ Browse our complete collection of components organized by category.
   >}}
 {{< /hextra/feature-grid >}}
 
-<div class="hx-mt-32"></div>
+<div style="margin-top: 8rem;"></div>
 
 ## Ready to Get Started?
+
+<div class="hx-mb-8"></div>
 
 <div class="hx-mt-8 hx-mb-12"></div>
 
